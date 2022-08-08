@@ -1,0 +1,46 @@
+.btn-filter {
+	cursor: pointer;
+	font-family: inherit;
+
+	font-weight: 500;
+	line-height: 1.65;
+	padding: 6px 22px;
+	border-radius: 4px;
+	border-width: 0;
+
+	color: var(--primary-text-color);
+	background: var(--accent-btn);
+
+	transition: background-color var(--transition-timing) var(--transition-function),
+		color var(--transition-timing) var(--transition-function),
+		box-shadow var(--transition-timing) var(--transition-function);
+	&:hover,
+	&:focus {
+		font-weight: 500;
+		line-height: 1.65;
+
+		background-color: var(--accent-color-background);
+		color: var(--focus-hover-color);
+		box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+	}
+}
+
+.btn-filter-list {
+	@include mq(mobile-only) {
+		flex-wrap: wrap;
+		justify-content: start;
+		grid-column-gap: 8px;
+		grid-row-gap: 15px;
+	
+	}
+	display: flex;
+	justify-content: center;
+	margin-bottom: 34px;
+
+	&__item {
+		margin-right: 8px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

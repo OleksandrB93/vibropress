@@ -1,0 +1,39 @@
+.btn {
+	padding: 10px 32px;
+
+	display: block;
+	margin: 0 auto;
+
+	min-width: 200px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	font-family: inherit;
+	cursor: pointer;
+
+	border-radius: 30px;
+	border-width: 0;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+	color: var(--primary-text-color);
+	background-color: var(--accent-color-background);
+	transition: background-color var(--transition-timing) var(--transition-function),
+		color var(--transition-timing) var(--transition-function);
+	&__icon {
+		margin-left: 10px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&:hover,
+	&:focus {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		background-color: var(--focus-hover-color);
+	}
+}
+
+

@@ -1,0 +1,22 @@
+body {
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+
+	color: var(--primary-text-color);
+	background-color: #ffffff;
+}
+
+body.modal-open {
+	overflow: hidden;
+}
+
+.icon {
+	fill: currentColor;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height:auto  
+}

@@ -1,0 +1,91 @@
+/* section Hero*/
+.hero {
+	max-width: 1600px;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../img/hero/hero-img.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+
+	// // mobile
+	// background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 	url("../img/hero/hero-img.jpg");
+	// background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 	-webkit-image-set (url("../img/hero/hero-img.jpg") 1x);
+
+	// // Завантаження ретінізованого фонового зображення
+	// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 		url("../img/hero/mobile/img-img_sm-@2x.jpg");
+	// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 		-webkit-image-set(url("../img/hero/hero-img.jpg") 2x);
+	// }
+
+	// // tablet
+
+	// @media screen and (min-width: 768px) {
+	// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 		url("../img/hero/tablet/img-img_md.jpg");
+	// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 		-webkit-image-set(url("../img/hero/hero-img.jpg") 1x);
+
+	// 	// Завантаження ретінізованого фонового зображення для tablet
+	// 	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	// 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 			url("../img/hero/tablet/img-img_md-@2x.jpg");
+	// 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 			-webkit-image-set(url("../img/hero/hero-img.jpg") 2x);
+	// 	}
+	// }
+
+	// // desktop
+
+	// @media screen and (min-width: 1200px) {
+	// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 		url("../img/hero/desktop/img-img_lg.jpg");
+	// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 		-webkit-image-set(url("../img/hero/hero-img.jpg") 1x);
+
+	// 	// Завантаження ретінізованого фонового зображення для decktop
+	// 	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	// 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 			url("../img/hero/desktop/img-img_lg-@2x.jpg");
+	// 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 			-webkit-image-set(url("../img/hero/hero-img.jpg") 2x);
+	// 	}
+}
+
+
+.hero-container {
+	max-width: 1600px;
+
+	text-align: center;
+	color: var(--title-h1-color);
+	padding-top: 200px;
+	padding-bottom: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-section {
+	padding: 0;
+}
+
+.hero-title {
+	@include mq(mobile-only) {
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 1.62;
+	}
+	margin-bottom: 30px;
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}

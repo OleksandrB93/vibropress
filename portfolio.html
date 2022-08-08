@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WebStudio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-container container">
+				<nav class="nav">
+					<a class="nav-logo" href="index.html">
+						<span class="nav__web">Web</span><span class="nav__studio">Studio</span>
+					</a>
+
+					<ul class="nav-list list">
+						<li class="nav-list__item">
+							<a class="nav-list__link" href="./index.html">Студия</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link nav-list__link--current" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link" href="Контакты">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+
+				<ul class="contacts-list list">
+					<li class="contacts-list__item">
+						<a class="contacts-list__link" href="mailto:info@devstudio.com">
+							<svg class="contacts-list__icon icon" width="16" height="12">
+								<use href="./img/icon/all-icon/icon.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="contacts-list__item">
+						<a class="contacts-list__link" href="tel:+380961111111">
+							<svg class="contacts-list__icon icon" width="10" height="16">
+								<use href="./img/icon/all-icon/icon.svg#icon-smartphone"></use>
+							</svg>
+							+38 (096) 111 11 11
+						</a>
+					</li>
+				</ul>
+
+				<div class="menu">
+					<button
+						class="menu-button"
+						type="button"
+						aria-controls="header__mobile-menu"
+						aria-expanded="false"
+						data-menu-button
+					>
+						<svg class="menu-button-icon icon" width="40px" height="40px" aria-label="Переключатель меню">
+							<use class="icon-menu" href="./img/icon/all-icon/icon.svg#icon-mobile-menu"></use>
+							<use class="icon-cross" href="./img/icon/all-icon/icon.svg#icon-mobile-close"></use>
+						</svg>
+					</button>
+
+					<div data-menu class="menu-container" id="header__mobile-menu">
+						<nav class="mobile-menu__navigation">
+							<ul class="mobile-menu__nav-list list">
+								<li class="mobile-nav-list__item">
+									<a class="mobile-nav-list__link" href="./index.html">Студия</a>
+								</li>
+								<li class="mobile-nav-list__item">
+									<a class="mobile-nav-list__link mobile-nav-list__link--current" href="./portfolio.html">Портфолио</a>
+								</li>
+								<li class="mobile-nav-list__item">
+									<a class="mobile-nav-list__link" href="">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<ul class="mobile-menu__contacts list">
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__contacts-mail" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mobile-menu__socials list">
+							<li class="mobile-menu__socials-item">
+								<a
+									class="mobile-menu__socials-link"
+									href="https://www.instagram.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									lang="en"
+								>
+									Instagram
+								</a>
+							</li>
+							<li class="mobile-menu__socials-item">
+								<a
+									class="mobile-menu__socials-link"
+									href="https://twitter.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									lang="en"
+								>
+									Twitter
+								</a>
+							</li>
+							<li class="mobile-menu__socials-item">
+								<a
+									class="mobile-menu__socials-link"
+									href="https://facebook.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									lang="en"
+								>
+									Facebook
+								</a>
+							</li>
+							<li class="mobile-menu__socials-item">
+								<a
+									class="mobile-menu__socials-link"
+									href="https://linkedin.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									lang="en"
+								>
+									LinkedIn
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!--Gallery-->
+			<section class="section gallery">
+				<h1 class="portfolio-title visually-hidden">Портфолио</h1>
+				<div class="container">
+					<!-- btn-filter -->
+					<ul class="btn-filter-list list">
+						<li class="btn-filter-list__item">
+							<button class="btn-filter" type="button">Всё</button>
+						</li>
+						<li class="btn-filter-list__item">
+							<button class="btn-filter" type="button">Веб-сайты</button>
+						</li>
+						<li class="btn-filter-list__item">
+							<button class="btn-filter" type="button">Приложения</button>
+						</li>
+						<li class="btn-filter-list__item">
+							<button class="btn-filter" type="button">Дизайн</button>
+						</li>
+						<li class="btn-filter-list__item">
+							<button class="btn-filter" type="button">Маркетинг</button>
+						</li>
+					</ul>
+					<!--Portfolio-->
+					<ul class="portfolio-list list">
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-1wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-1wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-1.jpg 1x, ./img/portfolio/desktop/img@2x_lg-1.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-1wp.webp 1x, ./img/portfolio/tablet/img@2x_md-1wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-1.jpg 1x, ./img/portfolio/tablet/img@2x_md-1.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-1wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-1wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-1.jpg, ./img/portfolio/mobile/img@2x_sm-1.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-1.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Технокряк</h2>
+									<p class="portfolio-list__text">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-2wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-2wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-2.jpg 1x, ./img/portfolio/desktop/img@2x_lg-2.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-2wp.webp 1x, ./img/portfolio/tablet/img@2x_md-2wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-2.jpg 1x, ./img/portfolio/tablet/img@2x_md-2.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-2wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-2wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-2.jpg, ./img/portfolio/mobile/img@2x_sm-2.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-2.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Ресторан Seafood</h2>
+									<p class="portfolio-list__text">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-3wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-3wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-3.jpg 1x, ./img/portfolio/desktop/img@2x_lg-3.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-3wp.webp 1x, ./img/portfolio/tablet/img@2x_md-3wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-3.jpg 1x, ./img/portfolio/tablet/img@2x_md-3.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-3wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-3wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-3.jpg, ./img/portfolio/mobile/img@2x_sm-3.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-3.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Ресторан Seafood</h2>
+									<p class="portfolio-list__text">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-4wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-4wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-4.jpg 1x, ./img/portfolio/desktop/img@2x_lg-4.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-4wp.webp 1x, ./img/portfolio/tablet/img@2x_md-4wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-4.jpg 1x, ./img/portfolio/tablet/img@2x_md-4.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-4wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-4wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-4.jpg, ./img/portfolio/mobile/img@2x_sm-4.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-4.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Проект Prime</h2>
+									<p class="portfolio-list__text">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-5wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-5wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-5.jpg 1x, ./img/portfolio/desktop/img@2x_lg-5.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-5wp.webp 1x, ./img/portfolio/tablet/img@2x_md-5wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-5.jpg 1x, ./img/portfolio/tablet/img@2x_md-5.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-5wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-5wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-5.jpg, ./img/portfolio/mobile/img@2x_sm-5.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-5.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Проект Boxes</h2>
+									<p class="portfolio-list__text">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-6wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-6wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-6.jpg 1x, ./img/portfolio/desktop/img@2x_lg-6.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-6wp.webp 1x, ./img/portfolio/tablet/img@2x_md-6wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-6.jpg 1x, ./img/portfolio/tablet/img@2x_md-6.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-6wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-6wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-6.jpg, ./img/portfolio/mobile/img@2x_sm-6.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-6.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Inspiration has no Borders</h2>
+									<p class="portfolio-list__text">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-7wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-7wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-7.jpg 1x, ./img/portfolio/desktop/img@2x_lg-7.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-7wp.webp 1x, ./img/portfolio/tablet/img@2x_md-7wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-7.jpg 1x, ./img/portfolio/tablet/img@2x_md-7.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-7wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-1wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-7.jpg, ./img/portfolio/mobile/img@2x_sm-7.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-7.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Издание Limited Edition</h2>
+									<p class="portfolio-list__text">Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-8wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-8wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-8.jpg 1x, ./img/portfolio/desktop/img@2x_lg-8.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-8wp.webp 1x, ./img/portfolio/tablet/img@2x_md-8wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-8.jpg 1x, ./img/portfolio/tablet/img@2x_md-8.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-8wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-8wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-8.jpg, ./img/portfolio/mobile/img@2x_sm-8.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-8.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Проект LAB</h2>
+									<p class="portfolio-list__text">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio_list__item">
+							<a class="portfolio-list__link" href="">
+								<div class="photo-thumb">
+									<picture>
+										<!-- Набір зображень для десктопу -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-9wp.webp 1x, ./img/portfolio/desktop/img@2x_lg-9wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./img/portfolio/desktop/img_lg-9.jpg 1x, ./img/portfolio/desktop/img@2x_lg-9.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- Набір зображень для планшетів -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-9wp.webp 1x, ./img/portfolio/tablet/img@2x_md-9wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./img/portfolio/tablet/img_md-9.jpg 1x, ./img/portfolio/tablet/img@2x_md-9.jpg 2x"
+											type="image/jpg"
+										/>
+
+										<!--Набір зображень для моб. екранів-->
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-9wp.webp 1x, ./img/portfolio/mobile/img@2x_sm-9wp.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./img/portfolio/mobile/img_sm-9.jpg, ./img/portfolio/mobile/img@2x_sm-9.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="team-list__photo"
+											src="./img/portfolio/mobile/img_sm-9.jpg"
+											alt="Игорь Демьяненко"
+											width="370"
+											height="294"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="card-overlay">
+										<p class="overlay-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consequuntur dignissimos sit
+											officia sapiente odit, libero perferendis mollitia totam nobis!
+										</p>
+									</div>
+								</div>
+								<div class="caption">
+									<h2 class="portfolio-list__title">Growing Business</h2>
+									<p class="portfolio-list__text">Приложение</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="footer section">
+			<div class="footer-container container">
+				<div class="footer-group">
+					<a class="nav-logo footer-logo" href="./index.html">
+						<span class="nav__web">Web</span><span class="nav__studio nav__studio--invers">Studio</span>
+					</a>
+					<address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+					<ul class="footer-group-list list">
+						<li class="footer-group-list__item">
+							<a class="footer-group-list__link" href="mailto:info@example.com">info@example.com</a>
+						</li>
+						<li class="footer-group-list__item">
+							<a class="footer-group-list__link" href="tel:+380991111111">+38 (099) 111 11 11</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="social">
+					<h2 class="social-title">присоединяйтесь</h2>
+					<ul class="social-list list">
+						<li class="social-list__item">
+							<a href="https://www.instagram.com/" class="social-list__link">
+								<svg class="icon" width="20" height="20">
+									<use href="./img/icon/all-icon/icon.svg#icon-instagram-F"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="https://twitter.com/?lang=ru" class="social-list__link">
+								<svg class="icon" width="20" height="20">
+									<use href="./img/icon/all-icon/icon.svg#icon-twitter-F"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="https://www.facebook.com/" class="social-list__link">
+								<svg class="icon" width="20" height="20">
+									<use href="./img/icon/all-icon/icon.svg#icon-facebook-F"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="https://www.linkedin.com/" class="social-list__link">
+								<svg class="icon" width="20" height="20">
+									<use href="./img/icon/all-icon/icon.svg#icon-linkedin-F"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-form">
+					<h2 class="title-subscription">Подпишитесь на рассылку</h2>
+					<form class="contact-form" autocomplete="off">
+						<label class="footer-label">
+							<input class="footer-label__input" type="email" name="email" placeholder="E-mail" />
+						</label>
+						<button class="btn btn-footer" type="submit">
+							<span class="btn__content">
+								Подписаться
+								<svg class="btn__icon" width="24" height="24">
+									<use href="./img/icon/all-icon/icon.svg#icon-footer-send"></use>
+								</svg>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="close-modal" type="button">
+					<svg class="btn-icon" width="18" height="18">
+						<use href="./img/icon/all-icon/icon.svg#icon-modal-closed"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/menu.js"></script>
+		<script src="./js/modal.js"></script>
+	</body>
+</html>

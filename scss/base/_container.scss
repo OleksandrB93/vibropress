@@ -1,0 +1,41 @@
+.section {
+	@media screen and (min-width: 320px) and(max-width:767px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@include mq(mobile) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@include mq(tablet) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@include mq(desktop) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+}
+
+.container {
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+
+	@include mq(mobile) {
+		width: 480px;
+	}
+
+	@include mq(tablet) {
+		width: 768px;
+	}
+
+	@include mq(desktop) {
+		width: 1200px;
+	}
+
+
+}

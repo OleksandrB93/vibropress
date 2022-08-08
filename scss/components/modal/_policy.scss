@@ -1,0 +1,18 @@
+.label-policy {
+	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+
+	cursor: pointer;
+	color: #757575;
+	
+	&__link {
+
+		color: var(--accent-color-background);
+		text-decoration-line: underline;
+		display: inline;
+	}
+}

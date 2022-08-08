@@ -1,0 +1,54 @@
+.checkbox-text {
+	@include mq(not-desktop) {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.17;
+
+		letter-spacing: 0.03em;
+	}
+	text-align: center;
+
+}
+
+.label-policy__checkbox {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: transparent;
+
+	&:focus + .label-policy__icon {
+		border-color: var(--accent-color-background);
+	}
+	&:checked + .label-policy__icon {
+		background-size: contain;
+		background-origin: border-box;
+
+		background-color: var(--accent-color-background);
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 15'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+		transition: background-color var(--transition-timing) var(--transition-function),
+			background-image var(--transition-timing) var(--transition-function);
+	}
+}
+
+.label-policy__icon {
+	left: 0;
+	margin-right: 8px;
+	width: 16px;
+	height: 15px;
+
+	border: 2px solid #212121;
+	border-radius: 2px;
+	background-size: contain;
+	background-origin: border-box;
+	transition: border-color var(--transition-timing) var(--transition-function);
+}
+
+.label-policy:hover .label-policy__icon {
+	border-color: var(--accent-color-background);
+}
+
+.label-policy:hover:checked .label-policy__icon,
+.label-policy:focus:checked .label-policy__icon {
+	border-color: #212121;
+}
