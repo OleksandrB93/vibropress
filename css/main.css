@@ -31,11 +31,13 @@
 }
 
 body {
-  position: relative;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-image: url("https://wallpaper.dog/large/20395915.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 body.modal-open {
@@ -50,6 +52,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+main {
+  position: relative;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1218,9 +1224,6 @@ textarea::placeholder {
 }
 
 /* section-features */
-.features {
-  background-color: var(--bcg-color-header);
-}
 @media screen and (min-width: 1280px) {
   .features {
     padding-top: 94px;
