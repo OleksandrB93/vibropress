@@ -82,7 +82,7 @@
 	cursor: pointer;
 	border-radius: 50%;
 	transition: all 0.2s ease-in-out;
-	background: rgba(255, 255, 255, 0.2);
+	background:var(--focus-hover-color);
 	// background: green;
 	// width: auto;
 	// height: 50px;

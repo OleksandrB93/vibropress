@@ -832,7 +832,7 @@ textarea::placeholder {
   border-radius: 50%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--focus-hover-color);
 }
 .hamburger-icon:hover {
   -webkit-transform: scale(1.2);
