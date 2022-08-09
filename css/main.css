@@ -1248,6 +1248,7 @@ nav.show {
 }
 
 .nav-desktop__link {
+  position: relative;
   font-weight: 500;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -1274,6 +1275,17 @@ nav.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav-desktop__link--curent::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  left: 0;
+  top: 120px;
+  border-radius: 2px;
+  background-color: var(--focus-hover-color);
 }
 
 /* section Hero*/
