@@ -1,23 +1,3 @@
-.mobile-nav-list__link {
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-
-	color: #212121;
-}
-
-.mobile-nav-list__link--current {
-	color: #25f321;
-}
-
-.mobile-menu__item {
-	margin-bottom: 32px;
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
 .mobile-menu__contacts {
 	margin-bottom: 50px;
 }
@@ -96,7 +76,7 @@
 	position: absolute;
 	height: 60px;
 	width: 60px;
-	top: 10%;
+	top: 1%;
 	right: 3%;
 	z-index: 1000;
 	cursor: pointer;
@@ -240,5 +220,11 @@ nav.show {
 		font-size: 70px;
 		animation: shotup 600ms ease-in-out;
 		animation-delay: 300ms;
+	}
+}
+
+.menu {
+	@include mq(desktop) {
+		display:none;
 	}
 }
