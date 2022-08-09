@@ -20,7 +20,10 @@
 	transition: background-color var(--transition-timing) var(--transition-function),
 		color var(--transition-timing) var(--transition-function);
 	&__icon {
+		transition: fill var(--transition-timing) var(--transition-function);
+		fill: white;
 		margin-left: 10px;
+
 	}
 
 	&__content {
@@ -32,8 +35,11 @@
 	&:hover,
 	&:focus {
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		background-color: var(--focus-hover-color);
+		background-color: var(--title-text-color);
 	}
 }
 
 
+	.btn:hover .btn__icon {
+		fill: black;
+	}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,63 +24,29 @@
 	</head>
 	<body>
 		<main>
-			<div class="header-container container">
-				<nav class="nav">
-					<a class="nav-logo" href="index.html">
-						<img class="logoMS" src="./img/logoMS.png" alt="logo" width="80" />
-						<span class="nav__web">Моторика</span>
-						<span class="nav__studio">-Південь</span>
-					</a>
-
-					<ul class="nav-list list">
-						<li class="nav-list__item">
-							<a class="nav-list__link nav-list__link--current" href="./index.html">Головна</a>
-						</li>
-						<li class="nav-list__item">
-							<a class="nav-list__link" href="./portfolio.html">Обладнання</a>
-						</li>
-						<li class="nav-list__item">
-							<a class="nav-list__link" href="./portfolio.html">Галерея</a>
-						</li>
-						<li class="nav-list__item">
-							<a class="nav-list__link" href="./portfolio.html">Прайс</a>
-						</li>
-						<li class="nav-list__item">
-							<a class="nav-list__link" href="./index2.html">Контакти</a>
-						</li>
-					</ul>
-				</nav>
-
+			
+			<section class="hero hero-section section">
 				<div class="menu">
-					<div data-menu class="menu-container is-open" id="header__mobile-menu" data-menu>
-						<nav class="mobile-menu__navigation">
-							<ul class="mobile-menu__nav-list list">
-								<li class="mobile-nav-list__item">
-									<a class="mobile-nav-list__link mobile-nav-list__link--current mobile-nav-list__link--current-logo" href="./index.html"> <img src="./img/logoMS.png" alt="logo" width="70"></a>
-								</li>
-								<li class="mobile-nav-list__item">
-									<a class="mobile-nav-list__link" href="./portfolio.html">Обладнання</a>
-								</li>
-								<li class="mobile-nav-list__item">
-									<a class="mobile-nav-list__link" href="">Галерея</a>
-								</li>
-								<li class="mobile-nav-list__item">
-									<a class="mobile-nav-list__link" href="">Прайс</a>
-								</li>
-								<li class="mobile-nav-list__item">
-									<a class="mobile-nav-list__link" href="">Контакти</a>
-								</li>
-							</ul>
-						</nav>
-						<ul class="mobile-menu__contacts list">
+					<div class="hamburger-icon" id="icon">
+						<div class="icon-1" id="a"></div>
+						<div class="icon-2" id="b"></div>
+						<div class="icon-3" id="c"></div>
+						<div class="clear"></div>
+					</div>
+	
+					<nav id="nav">
+						<ul>
+							<li>Головна</li>
+							<li>Обладнання</li>
+							<li>Галерея</li>
+							<li>Прайс</li>
+							<li>Контакти</li>
 							<li class="mobile-menu__item">
 								<a class="mobile-menu__contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
 							</li>
 							<li class="mobile-menu__item">
 								<a class="mobile-menu__contacts-mail" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
 							</li>
-						</ul>
-						<ul class="mobile-menu__socials list">
 							<li class="mobile-menu__socials-item">
 								<a
 									class="mobile-menu__socials-link"
@@ -126,55 +92,23 @@
 								</a>
 							</li>
 						</ul>
-					</div>
-					<button
-						class="menu-button is-open"
-						type="button"
-						aria-controls="header__mobile-menu"
-						aria-expanded="false"
-						data-menu-button
-					>
-						<span class="mobile-button__container">
-							<span class="mobile-button__top-line"></span>
-							<span class="mobile-button__middle-line"></span>
-							<span class="mobile-button__bottom-line"></span>
-						</span>
-					</button>
+					</nav>
+	
+					<div class="dark-blue" id="blue"></div>
 				</div>
-				<ul class="contacts-list list">
-					<li class="contacts-list__item">
-						<a class="contacts-list__link" href="mailto:info@devstudio.com">
-							<svg class="contacts-list__icon icon" width="16" height="12">
-								<use href="./img/icon/all-icon/icon.svg#icon-envelope"></use>
-							</svg>
-							info@motorika.com
-						</a>
-					</li>
-					<li class="contacts-list__item">
-						<a class="contacts-list__link" href="tel:+380961111111">
-							<svg class="contacts-list__icon icon" width="10" height="16">
-								<use href="./img/icon/all-icon/icon.svg#icon-smartphone"></use>
-							</svg>
-							+38 (096) 111 11 11
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<section class="hero hero-section section">
 				<div class="hero-container container">
 					<h1 class="hero-title">
-						ЭФФЕКТИВНЫЕ РЕШЕНИЯ
+						ЭФЕКТИВНЕ РІШЕННЯ
 						<br />
-						ДЛЯ ВАШЕГО БИЗНЕСА
+						ДЛЯ ВАШОГО БІЗНЕСУ
 					</h1>
-					<button data-modal-open class="btn" type="button">Заказать услугу</button>
+					<button data-modal-open class="btn" type="button">Замовити послугу</button>
 				</div>
 			</section>
 
 			<section class="section features">
 				<div class="container">
-					<h2 class="title visually-hidden">Достоинства</h2>
+					<h2 class="title visually-hidden">НАШІ ПЕРЕВАГИ</h2>
 					<ul class="features-list list">
 						<!--1.Point-->
 						<li class="features-list__item">
@@ -183,7 +117,7 @@
 									<use href="./img/icon/all-icon/icon.svg#icon-antenna"></use>
 								</svg>
 							</div>
-							<h3 class="features-list__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+							<h3 class="features-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
 							<p class="features-list__text">
 								Идейные соображения, а также начало повседневной работы по формированию позиции.
 							</p>
@@ -195,7 +129,7 @@
 									<use href="./img/icon/all-icon/icon.svg#icon-clock"></use>
 								</svg>
 							</div>
-							<h3 class="features-list__title">ПУНКТУАЛЬНОСТЬ</h3>
+							<h3 class="features-list__title">ПУНКТУАЛЬНІСТЬ</h3>
 							<p class="features-list__text">
 								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 							</p>
@@ -207,7 +141,7 @@
 									<use href="./img/icon/all-icon/icon.svg#icon-diagram"></use>
 								</svg>
 							</div>
-							<h3 class="features-list__title">ПЛАНИРОВАНИЕ</h3>
+							<h3 class="features-list__title">ПЛАНУВАННЯ</h3>
 							<p class="features-list__text">
 								Равным образом консультация с широким активом в значительной степени обуславливает.
 							</p>
@@ -219,7 +153,7 @@
 									<use href="./img/icon/all-icon/icon.svg#icon-astronaut"></use>
 								</svg>
 							</div>
-							<h3 class="features-list__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+							<h3 class="features-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
 							<p class="features-list__text">
 								Значимость этих проблем настолько очевидна, что реализация плановых заданий.
 							</p>
@@ -230,7 +164,7 @@
 
 			<section class="section client">
 				<div class="container">
-					<h2 class="client__title">Постоянные клиенты</h2>
+					<h2 class="client__title">Постійні клієнти</h2>
 					<ul class="client-list list">
 						<li class="client-list__item">
 							<a
@@ -325,10 +259,10 @@
 			<div class="footer-container container">
 				<div class="footer-group">
 					<a class="nav-logo footer-logo" href="./index.html">
-						<span class="nav__web">Web</span>
-						<span class="nav__studio nav__studio--invers">Studio</span>
+						<span class="nav__web">Моторика</span>
+						<span class="nav__studio nav__studio--invers">-Південь</span>
 					</a>
-					<address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+					<address class="address">г. Миколаїв, вул. Тіниста, 2</address>
 					<ul class="footer-group-list list">
 						<li class="footer-group-list__item">
 							<a class="footer-group-list__link" href="mailto:info@example.com">info@example.com</a>
@@ -340,7 +274,7 @@
 				</div>
 
 				<div class="social">
-					<h2 class="social-title">присоединяйтесь</h2>
+					<h2 class="social-title">приєднуйтесь</h2>
 					<ul class="social-list list">
 						<li class="social-list__item">
 							<a href="https://www.instagram.com/" class="social-list__link">
@@ -374,14 +308,14 @@
 				</div>
 
 				<div class="footer-form">
-					<h2 class="title-subscription">Подпишитесь на рассылку</h2>
+					<h2 class="title-subscription">Підпишіться на розсилку</h2>
 					<form class="contact-form" autocomplete="off">
 						<label class="footer-label">
 							<input class="footer-label__input" type="email" name="email" placeholder="E-mail" />
 						</label>
 						<button class="btn btn-footer" type="submit">
 							<span class="btn__content">
-								Подписаться
+								Підписатися
 								<svg class="btn__icon" width="24" height="24">
 									<use href="./img/icon/all-icon/icon.svg#icon-footer-send"></use>
 								</svg>
