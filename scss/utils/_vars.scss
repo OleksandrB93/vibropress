@@ -1,13 +1,15 @@
 :root {
-	--primary-text-color: #0e0202;
+	--primary-text-color: white;
 
 	--title-text-color: #ffffff;
 
 	--title-h1-color: #ffffff;
 
-	--accent-color-background: #7aff3d;
+	--accent-color-background: #03979d;
 
-	--focus-hover-color: #7aff3d ;
+	--focus-hover-color: #03979d ;
+
+	--focus-hover-color-client:white;
 
 	--accent-btn: #f5f4fa;
 
@@ -18,8 +20,10 @@
 	--contacts-list-color: rgba(255, 255, 255, 0.6);
 	--background-our-team: #f5f4fa;
 	--bgc-client: #e5e5e5;
+	--color-client:#03979d;
 	--icon-primary-color: #afb1b8;
-	--bgc-features-icon: #dedde2;
+	--bgc-features-icon: #03979d;
+	--color-text-btn:black;
 
 	--transition-timing: 300ms;
 	--transition-function: cubic-bezier(0.4, 0, 0.2, 1);

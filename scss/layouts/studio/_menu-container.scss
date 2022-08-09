@@ -4,23 +4,23 @@
 
 .mobile-menu__contacts-tel {
 	margin-top: 30px;
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 22px;
 	line-height: 1.7;
 
 	white-space: nowrap;
 	letter-spacing: 0.02em;
 
-	color: #25f321;
+	color: var(--focus-hover-color);
 }
 
 .mobile-menu__contacts-mail {
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 24px;
 	line-height: 1.17;
 	letter-spacing: 0.02em;
 
-	color: #25f321;
+	color:  var(--focus-hover-color);
 }
 
 .mobile-menu__socials {
@@ -47,7 +47,7 @@
 	line-height: 1.22;
 	letter-spacing: 0.02em;
 
-	color: #25f321;
+	color:  var(--focus-hover-color);
 }
 
 .icon-1,
@@ -77,7 +77,7 @@
 	height: 60px;
 	width: 60px;
 	top: 1%;
-	right: 3%;
+	right: 15%;
 	z-index: 1000;
 	cursor: pointer;
 	border-radius: 50%;
@@ -131,7 +131,7 @@
 }
 
 nav {
-	background: #535f65;
+	background: #d5dadd;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -144,7 +144,7 @@ nav {
 	ul {
 		margin: 0;
 		position: absolute;
-		top: 30%;
+		top: 10%;
 		right: 20%;
 		@include mq(mobile-only) {
 			right: 5%;
@@ -152,7 +152,7 @@ nav {
 		li {
 			list-style: none;
 			font-size: 24px;
-			color: rgb(4, 255, 0);
+			color:var(--focus-hover-color);
 			line-height: 2.2;
 			text-transform: uppercase;
 			letter-spacing: 1.7px;

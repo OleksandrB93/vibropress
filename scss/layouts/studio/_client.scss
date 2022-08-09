@@ -60,14 +60,14 @@
 	height: 100%;
 	border-radius: 4px;
 
-	color: var(--title-text-color);
-	border: 1px solid var(--title-text-color);
+	color: var(--color-client);
+	border: 3px solid var(--color-client);
 	transition: color var(--transition-timing) var(--transition-function),
 		border-color var(--transition-timing) var(--transition-function);
 
 	&:hover,
 	&:focus {
-		color: var(--focus-hover-color);
-		border-color: var(--focus-hover-color);
+		color: var(--focus-hover-color-client);
+		border-color: var(--focus-hover-color-client);
 	}
 }

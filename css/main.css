@@ -1,17 +1,20 @@
 :root {
-  --primary-text-color: #0e0202;
+  --primary-text-color: white;
   --title-text-color: #ffffff;
   --title-h1-color: #ffffff;
-  --accent-color-background: #7aff3d;
-  --focus-hover-color: #7aff3d ;
+  --accent-color-background: #03979d;
+  --focus-hover-color: #03979d ;
+  --focus-hover-color-client:white;
   --accent-btn: #f5f4fa;
   --bcg-color-footer: #2f303a;
   --bcg-color-header: #ffffff;
   --contacts-list-color: rgba(255, 255, 255, 0.6);
   --background-our-team: #f5f4fa;
   --bgc-client: #e5e5e5;
+  --color-client:#03979d;
   --icon-primary-color: #afb1b8;
-  --bgc-features-icon: #dedde2;
+  --bgc-features-icon: #03979d;
+  --color-text-btn:black;
   --transition-timing: 300ms;
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -34,7 +37,8 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background-image: url("https://wallpaper.dog/large/20395915.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(118, 111, 111, 0.4)), to(rgba(0, 1, 0, 0.635))), url("https://wallpaper.dog/large/20395915.jpg");
+  background-image: linear-gradient(to bottom, rgba(118, 111, 111, 0.4), rgba(0, 1, 0, 0.635)), url("https://wallpaper.dog/large/20395915.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -178,7 +182,7 @@ textarea::placeholder {
   border-width: 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--primary-text-color);
+  color: var(--color-text-btn);
   background-color: var(--accent-color-background);
   -webkit-transition: background-color var(--transition-timing) var(--transition-function), color var(--transition-timing) var(--transition-function);
   transition: background-color var(--transition-timing) var(--transition-function), color var(--transition-timing) var(--transition-function);
@@ -748,20 +752,20 @@ textarea::placeholder {
 
 .mobile-menu__contacts-tel {
   margin-top: 30px;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 22px;
   line-height: 1.7;
   white-space: nowrap;
   letter-spacing: 0.02em;
-  color: #25f321;
+  color: var(--focus-hover-color);
 }
 
 .mobile-menu__contacts-mail {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #25f321;
+  color: var(--focus-hover-color);
 }
 
 .mobile-menu__socials {
@@ -791,7 +795,7 @@ textarea::placeholder {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #25f321;
+  color: var(--focus-hover-color);
 }
 
 .icon-1,
@@ -826,7 +830,7 @@ textarea::placeholder {
   height: 60px;
   width: 60px;
   top: 1%;
-  right: 3%;
+  right: 15%;
   z-index: 1000;
   cursor: pointer;
   border-radius: 50%;
@@ -881,7 +885,7 @@ textarea::placeholder {
   }
 }
 nav {
-  background: #535f65;
+  background: #d5dadd;
   position: absolute;
   top: 0;
   right: 0;
@@ -895,7 +899,7 @@ nav {
 nav ul {
   margin: 0;
   position: absolute;
-  top: 30%;
+  top: 10%;
   right: 20%;
 }
 @media screen and (max-width: 767.98px) {
@@ -906,7 +910,7 @@ nav ul {
 nav ul li {
   list-style: none;
   font-size: 24px;
-  color: rgb(4, 255, 0);
+  color: var(--focus-hover-color);
   line-height: 2.2;
   text-transform: uppercase;
   letter-spacing: 1.7px;
@@ -1354,6 +1358,10 @@ nav.show {
   background-color: var(--bgc-features-icon);
 }
 
+.features-list__picto {
+  fill: white;
+}
+
 @media screen and (max-width: 767.98px) {
   .features-list {
     margin-bottom: 30px;
@@ -1483,14 +1491,14 @@ nav.show {
           justify-content: center;
   height: 100%;
   border-radius: 4px;
-  color: var(--title-text-color);
-  border: 1px solid var(--title-text-color);
+  color: var(--color-client);
+  border: 3px solid var(--color-client);
   -webkit-transition: color var(--transition-timing) var(--transition-function), border-color var(--transition-timing) var(--transition-function);
   transition: color var(--transition-timing) var(--transition-function), border-color var(--transition-timing) var(--transition-function);
 }
 .client-list__link:hover, .client-list__link:focus {
-  color: var(--focus-hover-color);
-  border-color: var(--focus-hover-color);
+  color: var(--focus-hover-color-client);
+  border-color: var(--focus-hover-color-client);
 }
 
 /* Footer */

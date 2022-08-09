@@ -17,6 +17,11 @@
 	background-color: var(--bgc-features-icon);
 }
 
+.features-list__picto {
+	fill:white;
+
+}
+
 .features-list {
 	@include mq(mobile-only) {
 		margin-bottom: 30px;
