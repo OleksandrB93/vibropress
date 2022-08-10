@@ -20,7 +20,7 @@
 	line-height: 1.17;
 	letter-spacing: 0.02em;
 
-	color:  var(--focus-hover-color);
+	color: var(--focus-hover-color);
 }
 
 .mobile-menu__socials {
@@ -47,7 +47,7 @@
 	line-height: 1.22;
 	letter-spacing: 0.02em;
 
-	color:  var(--focus-hover-color);
+	color: var(--focus-hover-color);
 }
 
 .icon-1,
@@ -76,17 +76,23 @@
 	position: absolute;
 	height: 60px;
 	width: 60px;
-	top: 1%;
+	top: 10px;
 	right: 15%;
 	z-index: 1000;
 	cursor: pointer;
 	border-radius: 50%;
 	transition: all 0.2s ease-in-out;
-	background:var(--focus-hover-color);
+	background: var(--focus-hover-color);
 	// background: green;
 	// width: auto;
 	// height: 50px;
 	// overflow: hidden;
+	@include mq(mobile-only) {
+		right: 5%;
+	}
+	@include mq(tablet-only) {
+		right: 17%;
+	}
 	&:hover {
 		// .icon-1 {
 		//   transform: rotate(40deg);
@@ -152,7 +158,7 @@ nav {
 		li {
 			list-style: none;
 			font-size: 24px;
-			color:var(--focus-hover-color);
+			color: var(--focus-hover-color);
 			line-height: 2.2;
 			text-transform: uppercase;
 			letter-spacing: 1.7px;
@@ -225,6 +231,6 @@ nav.show {
 
 .menu {
 	@include mq(desktop) {
-		display:none;
+		display: none;
 	}
 }

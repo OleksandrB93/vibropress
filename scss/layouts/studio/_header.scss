@@ -97,13 +97,15 @@
 /* .contacts-list */
 
 .contacts-list {
+	margin-top: 60px;
+
 	@include mq(mobile-only) {
 		display: none;
 	}
 
 	@include mq(tablet-only) {
-		display: block;
-		margin-left: auto;
+		display: none;
+
 	}
 
 	// @include mq(desktop) {
@@ -183,10 +185,22 @@
 .nav-logo {
 	display: flex;
 	align-items: end;
-	padding-top: 0;
-	padding-bottom: 0;
-
+	
 	@include mq(mobile-only) {
+		font-size: 22px;
+		margin-top: 10px;
+		padding: 0;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 1.17;
+
+		letter-spacing: 0.02em;
+	}
+
+		@include mq(tablet-only) {
+		font-size: 22px;
+		margin-top: 10px;
+		padding: 0;
 		font-weight: 500;
 		font-size: 15px;
 		line-height: 1.17;
@@ -203,11 +217,73 @@
 .logoMS {
 	display: flex;
 	align-items: end;
+	@include mq(mobile-only) {
+		width: 70px;
+	}
 }
 
-.nav-logo {
-	font-size: 22px;
-	padding: 0;
+.logo-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 30px;
+	margin-right: 40px;
+	@include mq(mobile-only) {
+		padding-left: 5px;
+	}
+	@include mq(tablet-only) {
+		padding-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	@include mq(desktop) {
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+}
+
+.nav__motorika {
+	@include mq(mobile-only) {
+		color: var(--focus-hover-color);
+		font-size: 30px;
+	}
+	@include mq(tablet-only) {
+		color: var(--focus-hover-color);
+		font-size: 30px;
+	}
+	@include mq(desktop) {
+		color: var(--focus-hover-color);
+		font-size: 30px;
+	}
+}
+
+.nav__pivden {
+	@include mq(mobile-only) {
+		color: white;
+		font-size: 30px;
+		letter-spacing: 0.2em;
+	}
+	@include mq(tablet-only) {
+		color: white;
+		font-size: 30px;
+		letter-spacing: 0.2em;
+	}
+	@include mq(desktop) {
+		color: white;
+		font-size: 30px;
+		letter-spacing: 0.2em;
+	}
+}
+.defis-logo {
+	@include mq(mobile-only) {
+		display: none;
+	}
+	@include mq(tablet-only) {
+		display: none;
+	}
+	@include mq(desktop) {
+		display: none;
+	}
 }
 
 .nav-desktop {
@@ -215,7 +291,12 @@
 	@include mq(desktop) {
 		display: block;
 		display: flex;
+		margin-right: 50px;
 	}
+}
+
+.nav-desktop-container{
+	display: flex;
 }
 
 .nav-desktop__link {

@@ -38,7 +38,7 @@
 	}
 
 	@include mq(desktop) {
-		margin-right: 70px;
+		margin-right: 50px;
 	}
 }
 
@@ -73,4 +73,9 @@
 	@include mq(tablet-only) {
 		margin-top: 20px;
 	}
+}
+
+
+.footer-logo {
+	justify-content: center;
 }
