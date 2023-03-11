@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "slide1",
+    "imgUrl": "/imgs/homeslider/1.jpg",
+    "text": "Автоматизовані лінії вібропресування"
+  },
+  {
+    "id": 2,
+    "name": "slide2",
+    "imgUrl": "/imgs/homeslider/2.jpg",
+    "text": "Проектування автоматичних заводів 'під ключ'"
+  },
+  {
+    "id": 3,
+    "name": "slide3",
+    "imgUrl": "/imgs/homeslider/3.jpg",
+    "text": "Розмумні рішення для вашого бізнесу"
+  },
+  {
+    "id": 4,
+    "name": "slide4",
+    "imgUrl": "/imgs/homeslider/4.jpg",
+    "text": "Виконання механіної обробки деталей"
+  },
+  {
+    "id": 5,
+    "name": "slide4",
+    "imgUrl": "/imgs/homeslider/1.jpg",
+    "text": "Прес-форми для вібропресування "
+  },
+  {
+    "id": 6,
+    "name": "slide4",
+    "imgUrl": "/imgs/homeslider/2.jpg",
+    "text": "Додаткове обладння для виробництва вібропресованої продукції"
+  }
+]
