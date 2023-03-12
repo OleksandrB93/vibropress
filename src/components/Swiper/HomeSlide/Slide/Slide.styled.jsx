@@ -14,13 +14,15 @@ export const SlideText = styled.p`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%) scale(${props => (props.isActive ? '1' : '0')});
+  transform: translate(-50%, -100%)
+    scale(${props => (props.isActive ? '1' : '0')});
   color: #ff8900;
   font-size: 30px;
   font-weight: bold;
-  background-color: #000000b0;
-  padding: 5px 15px;
+  background-color: #00000094;
+  padding: 5px 20px;
   border-radius: 15px;
+  text-align: center;
   opacity: ${props => (props.isActive ? '1' : '0')};
   transition: transform 0.8s ease-out, opacity 0.3s ease-out;
   animation: ${fadeIn} 0.5s ease-out forwards;
@@ -32,7 +34,7 @@ export const SlideText = styled.p`
 `;
 
 export const SlideItem = styled.div`
-padding: 15px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: center;
 `;
@@ -43,7 +45,7 @@ export const SlideImg = styled.img`
   height: 75vh;
   border-radius: 15px;
   object-fit: cover;
-  box-shadow: rgb(255, 132, 0) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
 `;
 
 SlideText.defaultProps = {

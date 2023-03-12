@@ -30,7 +30,6 @@ export default function Slider() {
         observer={true}
         grabCursor
         observeParents={true}
-        shouldSwiperUpdate={true}
         effect="coverflow"
         coverflowEffect={{
           rotate: 15,

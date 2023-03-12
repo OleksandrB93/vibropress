@@ -9,7 +9,7 @@
     "id": 2,
     "name": "slide2",
     "imgUrl": "/imgs/homeslider/2.jpg",
-    "text": "Проектування автоматичних заводів 'під ключ'"
+    "text": "Проектування автоматичних бетонних заводів 'під ключ'"
   },
   {
     "id": 3,
@@ -25,14 +25,14 @@
   },
   {
     "id": 5,
-    "name": "slide5",
-    "imgUrl": "/imgs/homeslider/1.jpg",
+    "name": "slide6",
+    "imgUrl": "/imgs/homeslider/5.jpg",
     "text": "Прес-форми для вібропресування "
   },
   {
     "id": 6,
     "name": "slide6",
-    "imgUrl": "/imgs/homeslider/2.jpg",
+    "imgUrl": "/imgs/homeslider/6.jpg",
     "text": "Додаткове обладння для виробництва\nвібропресованої продукції"
   }
 ]
