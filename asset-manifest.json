@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vibropress/static/css/main.d978d27c.css",
+    "main.js": "/vibropress/static/js/main.e6733aed.js",
+    "index.html": "/vibropress/index.html",
+    "main.d978d27c.css.map": "/vibropress/static/css/main.d978d27c.css.map",
+    "main.e6733aed.js.map": "/vibropress/static/js/main.e6733aed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d978d27c.css",
+    "static/js/main.e6733aed.js"
+  ]
+}
