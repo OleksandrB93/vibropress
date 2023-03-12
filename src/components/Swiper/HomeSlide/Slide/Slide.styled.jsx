@@ -12,39 +12,38 @@ const fadeIn = keyframes`
 
 export const SlideText = styled.p`
   position: absolute;
-  top: 5%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%) scale(${props => (props.isActive ? '1' : '0')});
   color: #ff8900;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
- 
   background-color: #000000b0;
   padding: 5px 15px;
   border-radius: 15px;
   opacity: ${props => (props.isActive ? '1' : '0')};
-  transform: translateX(${props => (props.isActive ? '0%' : '-100%')});
   transition: transform 0.8s ease-out, opacity 0.3s ease-out;
   animation: ${fadeIn} 0.5s ease-out forwards;
 
   @media (max-width: 768px) {
-    font-size: 28px;
+    font-size: 15px;
     line-height: 36px;
   }
 `;
 
 export const SlideItem = styled.div`
-  position: relative;
+padding: 15px 0;
   display: flex;
   justify-content: center;
-
-  &:hover ${SlideText} {
-    transform: translateX(0);
-  }
 `;
 
 export const SlideImg = styled.img`
-  width: 80%;
-  height: 80vh;
+  position: relative;
+  width: 75%;
+  height: 75vh;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: rgb(255, 132, 0) 0px 5px 15px;
 `;
 
 SlideText.defaultProps = {

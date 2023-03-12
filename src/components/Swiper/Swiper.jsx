@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { SlideBox } from './Swiper.styled';
-import { Autoplay, Navigation, Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination, EffectCoverflow } from 'swiper';
 
 export default function Slider() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
@@ -19,23 +19,32 @@ export default function Slider() {
     <SlideBox>
       <Swiper
         onSlideChangeTransitionEnd={handleSlideChange}
-        modules={[Autoplay, Navigation, Pagination]}
+        modules={[Autoplay, Navigation, Pagination, EffectCoverflow]}
         autoplay={{
-          delay: 3000,
+          delay: 6000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
         navigation
-        loop
-        loopAdditionalSlides={2}
         speed={1000}
-        lazy={true}
+        observer={true}
+        grabCursor
+        observeParents={true}
+        shouldSwiperUpdate={true}
+        effect="coverflow"
+        coverflowEffect={{
+          rotate: 15,
+          stretch: 250,
+          depth: 200,
+          modifier: 1,
+          slideShadows: false,
+        }}
       >
-        {homeSlider.map((homeSlider, index) => (
+        {homeSlider.map((homeSlider, homeSliderIndex) => (
           <SwiperSlide key={homeSlider.id}>
             <Slide
               homeSlider={homeSlider}
-              isActive={activeSlideIndex === index}
+              isActive={activeSlideIndex === homeSliderIndex}
             />
           </SwiperSlide>
         ))}
