@@ -38,6 +38,7 @@ export default function Slider() {
           modifier: 1,
           slideShadows: false,
         }}
+        // loop={true}
       >
         {homeSlider.map((homeSlider, homeSliderIndex) => (
           <SwiperSlide key={homeSlider.id}>

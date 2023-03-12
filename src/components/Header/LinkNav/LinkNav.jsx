@@ -8,7 +8,6 @@ export default function LinkNav() {
       <LinkContainer to="about">Про нас</LinkContainer>
       <LinkContainer to="production">Продукція</LinkContainer>
       <LinkContainer to="service">Сервіс</LinkContainer>
-      <LinkContainer to="news">Новини</LinkContainer>
       <LinkContainer to="contacts">Контакти</LinkContainer>
     </div>
   );
