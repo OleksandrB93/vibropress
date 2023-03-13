@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 export const FooterInfoContainer = styled.div`
   display: flex;
   flex-direction: column;

@@ -1,13 +1,31 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
+export const NavContainer = styled.div`
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    height: 100vh;
+    padding: 30px;
+    padding-top: 80px;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.596); 
+    background-color: #c7c7c7;
+    > *:last-child {
+      margin-top: auto;
+    }
+  }
+`;
 export const LinkContainer = styled(NavLink)`
-  position: relative;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: black;
-  padding: 7px 30px;
+  padding: 7px 10px;
   opacity: 1;
 
   &.active {

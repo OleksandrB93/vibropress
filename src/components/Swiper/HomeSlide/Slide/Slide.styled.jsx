@@ -42,7 +42,7 @@ export const SlideItem = styled.div`
 export const SlideImg = styled.img`
   position: relative;
   width: 75%;
-  height: 75vh;
+  height: 65vh;
   border-radius: 15px;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
