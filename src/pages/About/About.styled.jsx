@@ -1,8 +1,16 @@
 import styled from '@emotion/styled';
 
-export const AboutContainer=styled.div`
-    margin: 30px 180px;
-`
+export const AboutContainer = styled.div`
+  @media (min-width: 480px) {
+    margin: 7px 45px;
+  }
+  @media (min-width: 768px) {
+    margin: 15px 90px;
+  }
+  @media (min-width: 1200px) {
+    margin: 30px 150px;
+  }
+`;
 
 export const AboutTitel = styled.h2`
   margin-top: 30px;

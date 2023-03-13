@@ -24,6 +24,7 @@ export default function Cooperation() {
           pagination={{
             clickable: true,
           }}
+          navigation={true}
           breakpoints={{
             320: {
               slidesPerView: 2,

@@ -22,7 +22,7 @@ export const FeaturesContainer = styled.div`
 
   @media (max-width: 480px) {
     grid-gap: 30px;
-    grid-template-columns: 300px;
+    grid-template-columns: 270px;
   }
 `;
 
