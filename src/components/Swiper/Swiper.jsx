@@ -25,7 +25,6 @@ export default function Slider() {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        navigation
         speed={1000}
         observer={true}
         grabCursor
@@ -33,12 +32,13 @@ export default function Slider() {
         effect="coverflow"
         coverflowEffect={{
           rotate: 15,
-          stretch: 250,
+          stretch: 330,
           depth: 200,
           modifier: 1,
           slideShadows: false,
         }}
         // loop={true}
+        pagination={{ type: 'bullets', clickable: true, dynamicBullets: true }}
       >
         {homeSlider.map((homeSlider, homeSliderIndex) => (
           <SwiperSlide key={homeSlider.id}>

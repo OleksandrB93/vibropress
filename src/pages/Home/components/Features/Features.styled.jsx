@@ -10,6 +10,20 @@ export const FeaturesContainer = styled.div`
   flex-wrap: wrap;
   background-color: #02749ea7;
 
+  @media (max-width: 1200px) {
+    grid-gap: 30px;
+    grid-template-columns: 370px 370px;
+  }
+
+  @media (max-width: 768px) {
+    grid-gap: 30px;
+    grid-template-columns: 200px 200px;
+  }
+
+  @media (max-width: 480px) {
+    grid-gap: 30px;
+    grid-template-columns: 300px;
+  }
 `;
 
 export const FeaturesItem = styled.div`
@@ -22,6 +36,12 @@ export const FeaturesItem = styled.div`
   background-color: #d7d7d7;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
   transition: all 0.3s ease-in-out;
+  @media (max-width: 768px) {
+    width: 180px;
+  }
+  @media (max-width: 480px) {
+    width: 250px;
+  }
 
   &:hover {
     background: linear-gradient(to right, #d7d7d7, #ff8900);

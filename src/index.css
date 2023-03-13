@@ -7,6 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg, #eef2f3, #7da1af, #d5d5d5, #eef2f3);
+  background-size: 100% 100%;
+  animation: gradient 10s ease infinite;
 }
 
 code {
@@ -20,4 +23,15 @@ h2,
 h3 {
   padding: 0;
   margin: 0;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

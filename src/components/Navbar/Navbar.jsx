@@ -6,6 +6,7 @@ import Logo from 'components/Header/Logo/Logo';
 import Buttons from 'components/Header/Buttons/Buttons';
 import { NavbarContainer } from './Navbar.styled';
 import Footer from 'components/Footer/Footer';
+import Contact from 'components/Contact/Contact';
 
 export default function Navbar() {
   return (
@@ -14,6 +15,7 @@ export default function Navbar() {
         <Logo />
         <LinkNav />
         <Buttons />
+        <Contact />
       </NavbarContainer>
       <main>
         <Suspense fallback={<div>Loading...</div>}>

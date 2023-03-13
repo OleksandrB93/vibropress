@@ -8,7 +8,8 @@ import 'swiper/css/pagination';
 import {
   CooperationContainer,
   CooperationSlide,
-  CoopTitle,Coop
+  CoopTitle,
+  Coop,
 } from './Cooperation.styled';
 
 export default function Cooperation() {
@@ -22,6 +23,24 @@ export default function Cooperation() {
           spaceBetween={30}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1440: {
+              slidesPerView: 6,
+              spaceBetween: 30,
+            },
           }}
         >
           <CooperationSlide>
