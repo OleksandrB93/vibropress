@@ -8,6 +8,42 @@ import 'swiper/css/navigation';
 import { SlideBox } from './Swiper.styled';
 import { Autoplay, Navigation, Pagination, EffectCoverflow } from 'swiper';
 
+const breakpoints = {
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 100,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+  },
+  768: {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    coverflowEffect: {
+      rotate: 15,
+      stretch: 150,
+      depth: 200,
+      modifier: 1,
+      slideShadows: false,
+    },
+  },
+  1024: {
+    slidesPerView: 1,
+    spaceBetween: 70,
+    coverflowEffect: {
+      rotate: 15,
+      stretch: 400,
+      depth: 300,
+      modifier: 1,
+      slideShadows: false,
+    },
+  },
+};
+
 export default function Slider() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
@@ -26,6 +62,7 @@ export default function Slider() {
           pauseOnMouseEnter: true,
         }}
         speed={1000}
+        breakpoints={breakpoints}
         observer={true}
         grabCursor
         observeParents={true}

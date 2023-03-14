@@ -31,8 +31,6 @@ export const NavContainer = styled.div`
     background-color: #c7c7c7;
     > *:last-child {
       display: flex;
-
-      /* margin-top: auto; */
     }
   }
 `;

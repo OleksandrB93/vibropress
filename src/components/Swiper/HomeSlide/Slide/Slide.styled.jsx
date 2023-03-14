@@ -46,6 +46,11 @@ export const SlideImg = styled.img`
   border-radius: 15px;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+
+  @media (max-width: 480px) {
+    width: 75%;
+    height: 55vh;
+  }
 `;
 
 SlideText.defaultProps = {
