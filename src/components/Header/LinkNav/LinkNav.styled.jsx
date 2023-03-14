@@ -26,12 +26,14 @@ export const NavContainer = styled.div`
     width: 55vw;
     height: 100vh;
     padding: 30px;
+
     padding-top: 80px;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.596);
     background-color: #c7c7c7;
     > *:last-child {
       display: flex;
     }
+
   }
 `;
 export const LinkContainer = styled(NavLink)`

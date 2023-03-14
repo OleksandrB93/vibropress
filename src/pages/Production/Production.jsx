@@ -26,14 +26,14 @@ export default function Production() {
         <PtoductionImg>
           <figure>
             <img
-              src={process.env.PUBLIC_URL + '/imgs/production/1.png'}
+              src={process.env.PUBLIC_URL + '/imgs/production/1.jpg'}
               alt="Вібропрес PGV-120U "
             />
             <figure>Рис. 1 Вібропрес PGV-120U</figure>
           </figure>
           <figure>
             <img
-              src={process.env.PUBLIC_URL + '/imgs/production/2.png'}
+              src={process.env.PUBLIC_URL + '/imgs/production/2.jpg'}
               alt="Вібропрес PGV-120U "
             />
             <figure>Рис. 2 Вібропрес PGV-120М</figure>
