@@ -32,7 +32,7 @@ export const LocitionContainer = styled.div`
 export const GoogleMap = styled.iframe`
   border-radius: 15px;
   border: 1px solid #ff8900;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgba(38, 57, 77, 0.337) 0px 20px 30px -10px;
 
   @media (max-width: 768px) {
     width: 450px;
