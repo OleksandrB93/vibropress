@@ -37,19 +37,13 @@ export const NavContainer = styled.div`
   }
 `;
 export const LinkContainer = styled(NavLink)`
+  position: relative;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   color: black;
   padding: 7px 10px;
   opacity: 1;
-
-  &.active {
-    color: #ff8900;
-    background-color: #020202;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-  }
 
   &:before {
     content: '';
@@ -70,5 +64,15 @@ export const LinkContainer = styled(NavLink)`
       transform: scaleX(0.8);
       box-shadow: 0px -1px 70px 1px black;
     }
+  }
+
+  &.active {
+    color: #ff8900;
+    background-color: #020202;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+  &.active:before {
+    border-color: #ff8900;
   }
 `;
