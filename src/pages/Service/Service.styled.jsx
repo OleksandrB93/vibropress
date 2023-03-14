@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 
 export const ServiceContainer = styled.div`
+  @media (min-width: 320px) {
+    margin: 7px 10px;
+  }
   @media (min-width: 480px) {
     margin: 7px 45px;
   }

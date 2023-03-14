@@ -2,6 +2,9 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const ProductionContainer = styled.div`
+  @media (min-width: 320px) {
+    margin: 7px 10px;
+  }
   text-align: center;
   @media (min-width: 480px) {
     margin: 7px 45px;
@@ -72,6 +75,12 @@ export const Table = styled.table`
   margin: 0 auto;
   border-collapse: collapse;
   width: 100%;
+
+  @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 `;
 
 export const TheadTitle = styled.p`
