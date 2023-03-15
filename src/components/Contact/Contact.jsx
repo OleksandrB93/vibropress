@@ -1,29 +1,26 @@
 import { SiTelegram } from 'react-icons/si';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { MdMarkEmailUnread } from 'react-icons/md';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
-import {
-  ContactContainer,
-} from '../Footer/FooterInfo/FooterInfo.styled';
+import { ContactContainer } from '../Footer/FooterInfo/FooterInfo.styled';
 
 export default function Contact() {
   return (
-    <ContactContainer>
+    <ContactContainer >
       <div>
-        <NavLink href="tel:+380678987832">
+        <a href="tel:+380678987832">
           <BsTelephoneFill />
           <SiTelegram color={'#1ea7f7'} />
-          <p>+38 (067) 89-87-832</p>{' '}
-        </NavLink>
+          +38 (067) 89-87-832
+        </a>
       </div>
       <div>
-        <NavLink href="telefram">
+        <a href="tel:+3805101895">
           <BsTelephoneFill />
           <SiTelegram color={'#1ea7f7'} />
-
-          <p>+38 (067) 51-01-895</p>
-        </NavLink>
+          +38 (067) 51-01-895
+        </a>
       </div>
       <div>
         <a href="mailto:motorika.ug@gmail.com">

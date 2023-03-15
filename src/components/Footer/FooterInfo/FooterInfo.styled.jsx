@@ -61,7 +61,7 @@ export const ContactContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px;
+    /* padding: 6px; */
     color: black;
     text-decoration: none;
   }

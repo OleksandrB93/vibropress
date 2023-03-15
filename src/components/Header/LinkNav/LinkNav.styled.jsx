@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const Box = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 888.98px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +15,7 @@ export const Box = styled.div`
 `;
 
 export const NavContainer = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 888.98px) {
     position: absolute;
     top: 0;
     right: 0;
@@ -33,10 +33,10 @@ export const NavContainer = styled.div`
     > *:last-child {
       display: flex;
     }
-
   }
 `;
 export const LinkContainer = styled(NavLink)`
+  width: 200px;
   position: relative;
   text-decoration: none;
   font-size: 18px;
@@ -45,16 +45,28 @@ export const LinkContainer = styled(NavLink)`
   padding: 7px 10px;
   opacity: 1;
 
+  @media (min-width: 889px) {
+    margin-left: 10px;
+  }
+
+  @media (max-width: 888.98px) {
+    margin-bottom: 10px;
+  }
+
   &:before {
     content: '';
     width: 100%;
     position: absolute;
-    left: 0px;
+    left: 0%;
     bottom: 0px;
     border-bottom: 3px solid black;
     transition: transform 250ms ease-out;
     transform-origin: center;
     transform: scaleX(0);
+
+    @media (max-width: 888.98px) {
+      left: -8%;
+    }
   }
 
   &:hover:not(.active),

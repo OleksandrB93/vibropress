@@ -1,9 +1,13 @@
-import React from 'react';
+import { LogoContainer } from './Logo.styled';
 
-export default function Logo() {
+export default function Logo({ isScrolled }) {
   return (
-    <div>
-     <img src={process.env.PUBLIC_URL + '/imgs/logo.jpg'} alt="logo" width={250}/>
-    </div>
+    <LogoContainer isScrolled={isScrolled}>
+      <img
+        src={process.env.PUBLIC_URL + '/imgs/logo.jpg'}
+        alt="logo"
+        width={250}
+      />
+    </LogoContainer>
   );
 }

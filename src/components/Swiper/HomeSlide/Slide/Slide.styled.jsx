@@ -12,7 +12,7 @@ const fadeIn = keyframes`
 
 export const SlideText = styled.p`
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -100%)
     scale(${props => (props.isActive ? '1' : '0')});
@@ -26,9 +26,9 @@ export const SlideText = styled.p`
   opacity: ${props => (props.isActive ? '1' : '0')};
   transition: transform 0.8s ease-out, opacity 0.3s ease-out;
   animation: ${fadeIn} 0.5s ease-out forwards;
-
+  
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 10px;
     line-height: 36px;
   }
 `;

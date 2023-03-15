@@ -1,7 +1,7 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper } from 'swiper/react';
-
+import SwiperCore, { Navigation } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,6 +11,8 @@ import {
   CoopTitle,
   Coop,
 } from './Cooperation.styled';
+
+SwiperCore.use([Navigation]);
 
 export default function Cooperation() {
   return (

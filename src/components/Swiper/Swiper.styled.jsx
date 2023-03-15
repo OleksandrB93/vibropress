@@ -19,7 +19,7 @@ export const SlideBox = styled.div`
       margin-right: 10px;
 
       &.swiper-pagination-bullet-active {
-        opacity: 1;
+        opacity: 0.85;
       }
     }
   }

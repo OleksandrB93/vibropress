@@ -26,8 +26,9 @@ export const ProductionText = styled.p`
   font-size: 18px;
   padding: 5px 0px;
   text-indent: 40px;
-  text-align: center;
+  /* text-align: center; */
   text-align: justify;
+  hyphens: auto;
 `;
 
 export const ProductionLink = styled(NavLink)`
