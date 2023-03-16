@@ -47,8 +47,6 @@ export const DropList = styled.ul`
   color: black;
   background-color: #c7c7c7a3;
   border: 1px solid #000;
-  border-radius: 10px;
-  border-top: none;
   width: 200px;
   z-index: 999;
 
@@ -131,4 +129,62 @@ export const LinkContainer = styled(NavLink)`
   &.active:before {
     border-color: #ff8900;
   }
+`;
+
+export const DropListVibro = styled.ul`
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  display: none;
+  border: 1px solid #000;
+`;
+
+export const DropItemVibro = styled.li`
+  position: relative;
+  &:hover {
+    ${DropListVibro} {
+      display: block;
+    }
+  }
+`;
+
+export const DropItemVibroPoint = styled.li`
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: #c7c7c7a3;
+
+  border-top: none;
+`;
+
+
+
+
+
+export const DropListBeton = styled.ul`
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  display: none;
+  border: 1px solid #000;
+`;
+
+export const DropItemBeton = styled.li`
+  position: relative;
+  &:hover {
+    ${DropListBeton} {
+      display: block;
+    }
+  }
+`;
+
+export const DropItemBetonPoint = styled.li`
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: #c7c7c7a3;
+
+  border-top: none;
 `;
