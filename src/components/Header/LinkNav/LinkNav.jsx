@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   LinkContainer,
   NavContainer,
@@ -13,6 +14,7 @@ import {
   DropItemPress,
   DropItemPressPoint,
   DropListPress,
+  LinkContainerProd, Li
 } from './LinkNav.styled';
 import { useMediaQuery } from 'react-responsive';
 import Contact from 'components/Contact/Contact';
@@ -45,24 +47,49 @@ export default function LinkNav({ handleToggle, isOpen }) {
           Про нас
         </LinkContainer>
 
-        <LinkContainer to="/production">
+        <LinkContainerProd>
           Продукція
           <DropList>
             <DropItemVibro to="/production" onClick={handleToggle}>
               Вібропреси
               <DropListVibro>
-                <DropItemVibroPoint to="/production" onClick={handleToggle}>
-                  Вібропрес PGV-120U(М)
-                </DropItemVibroPoint>
-                <DropItemVibroPoint>
-                  Крокуючий Вібропрес PGV-W
-                </DropItemVibroPoint>
-                <DropItemVibroPoint>
-                  Автоматичний Вібропрес PGV-400
-                </DropItemVibroPoint>
-                <DropItemVibroPoint>
-                  Автоматичний Вібропрес PGV-1000
-                </DropItemVibroPoint>
+                <Li>
+                  <DropItemVibroPoint
+                    to="/vibropress/model1"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Вібропрес PGV-120U(М)
+                  </DropItemVibroPoint>
+                </Li>
+                <Li>
+                  <DropItemVibroPoint
+                    to="/vibropress/model2"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Крокуючий Вібропрес PGV-W
+                  </DropItemVibroPoint>
+                </Li>
+                <Li>
+                  <DropItemVibroPoint
+                    to="/vibropress/model3"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Автоматичний Вібропрес PGV-400
+                  </DropItemVibroPoint>
+                </Li>
+
+                <Li>
+                  <DropItemVibroPoint
+                    to="/vibropress/model4"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Автоматичний Вібропрес PGV-1000
+                  </DropItemVibroPoint>
+                </Li>
               </DropListVibro>
             </DropItemVibro>
 
@@ -97,7 +124,7 @@ export default function LinkNav({ handleToggle, isOpen }) {
               </DropListPress>
             </DropItemPress>
           </DropList>
-        </LinkContainer>
+        </LinkContainerProd>
 
         <LinkContainer to="/service" onClick={handleToggle}>
           Сервіс

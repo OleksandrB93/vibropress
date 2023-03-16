@@ -15,6 +15,7 @@ export const Box = styled.div`
 `;
 
 export const NavContainer = styled.div`
+  display: flex;
   @media (max-width: 888.98px) {
     position: absolute;
     top: 0;
@@ -73,7 +74,9 @@ export const DropList = styled.ul`
 export const DropItem = styled.li``;
 
 export const LinkContainer = styled(NavLink)`
-  width: 200px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
   position: relative;
   text-decoration: none;
   font-size: 18px;
@@ -130,14 +133,99 @@ export const LinkContainer = styled(NavLink)`
     border-color: #ff8900;
   }
 `;
+export const LinkContainerProd = styled.div`
+  cursor: pointer;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  padding: 7px 10px;
+  opacity: 1;
+  :hover {
+    background-color: #020202;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    ${DropList} {
+      display: block;
+    }
+  }
+  @media (min-width: 889px) {
+    margin-left: 10px;
+  }
+
+  @media (max-width: 888.98px) {
+    margin-bottom: 10px;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    border-bottom: 3px solid black;
+    transition: transform 250ms ease-out;
+    transform-origin: center;
+    transform: scaleX(0);
+
+    @media (max-width: 888.98px) {
+      left: -8%;
+    }
+  }
+
+  &:hover:not(.active),
+  &:focus-visible:not(.active) {
+    color: #ff8900;
+    &:before {
+      transform: scaleX(0.8);
+      box-shadow: 0px -1px 70px 1px black;
+    }
+  }
+
+  &.active {
+    color: #ff8900;
+    background-color: #020202;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+  &.active:before {
+    border-color: #ff8900;
+  }
+`;
 
 export const DropListVibro = styled.ul`
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateX(100%);
+  left: 100%;
+  /* transform: translateX(100%); */
   display: none;
   border: 1px solid #000;
+  background-color: #c7c7c7a3;
+
+  animation: fadeIn 250ms ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+`;
+
+export const Li = styled.li`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const DropItemVibro = styled.li`
@@ -147,24 +235,35 @@ export const DropItemVibro = styled.li`
       display: block;
     }
   }
+  background-color: #c7c7c7a3;
 `;
 
 export const DropItemVibroPoint = styled.li`
   text-decoration: none;
   list-style: none;
   color: black;
-  background-color: #c7c7c7a3;
-
   border-top: none;
 `;
 
 export const DropListBeton = styled.ul`
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateX(100%);
+  left: 100%;
   display: none;
   border: 1px solid #000;
+
+  animation: fadeIn 250ms ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 `;
 
 export const DropItemBeton = styled.li`
@@ -188,10 +287,23 @@ export const DropItemBetonPoint = styled.li`
 export const DropListPress = styled.ul`
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateX(100%);
+  left: 100%;
   display: none;
   border: 1px solid #000;
+  background-color: #c7c7c7a3;
+
+  animation: fadeIn 250ms ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 `;
 
 export const DropItemPress = styled.li`
@@ -207,7 +319,6 @@ export const DropItemPressPoint = styled.li`
   text-decoration: none;
   list-style: none;
   color: black;
-  background-color: #c7c7c7a3;
 
   border-top: none;
 `;
