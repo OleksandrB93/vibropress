@@ -10,6 +10,8 @@ import {
   HeadTr,
   Tbody,
   PtoductionImg,
+  ProductionTextPrincip,
+  ProductionTitlePrincip,
 } from './Production.styled';
 
 export default function Production() {
@@ -50,14 +52,35 @@ export default function Production() {
           елементів ландшафтної архітектури – тротуарний поребрик, бордюр
           дорожній, блоки,·бетонні вироби.
         </ProductionText>
-        <ProductionText>Принцип роботи вібропресу:</ProductionText>
         <ProductionText>
-           у матрицю прес-форми вручну засипається напівсухий бетон;  для
-          укладання фактурного шару, на кілька секунд включається нульова
-          вібрація;  засипається фактурний шар бетону (за необхідності);  з
-          опусканням пуансона, включається основна вібрація;  відбувається
-          розпалубка виробу і він потрапляє в пропарочну камеру (або її аналог);
+          Вібропрес гідравлічного типу PGV-120U(М) відрізняється простотою
+          обслуговування та налаштування. Інтуїтивно зрозумілий функціонал дає
+          можливість мінімізувати витрати часу на виробництво.
         </ProductionText>
+        <ProductionTitlePrincip>
+          Принцип роботи вібропресу:
+        </ProductionTitlePrincip>
+        <ProductionTextPrincip>
+          - технологічний дерев'яний піддон встановлюється на вібростіл на який
+          опускається матриця;
+        </ProductionTextPrincip>
+        <ProductionTextPrincip>
+          - у матрицю прес-форми вручну засипається напівсухий бетон;
+        </ProductionTextPrincip>
+        <ProductionTextPrincip>
+          - для укладання фактурного шару, на кілька секунд включається нульова
+          вібрація;
+        </ProductionTextPrincip>
+        <ProductionTextPrincip>
+          - засипається фактурний шар бетону (за необхідності);
+        </ProductionTextPrincip>
+        <ProductionTextPrincip>
+          - з опусканням пуансона, включається основна вібрація;
+        </ProductionTextPrincip>
+        <ProductionTextPrincip>
+          - відбувається розпалубка виробу і він потрапляє в пропарочну камеру
+          (або її аналог);
+        </ProductionTextPrincip>
         <ProductionText>
           Надійність вібропресу, простота в управлінні та обслуговуванні, а
           також його універсальність гарантують ефективний початок будівельної

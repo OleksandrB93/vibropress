@@ -1,5 +1,11 @@
 import React, { useEffect } from 'react';
-import { LinkContainer, NavContainer, Box } from './LinkNav.styled';
+import {
+  LinkContainer,
+  NavContainer,
+  Box,
+  DropList,
+  DropItem,
+} from './LinkNav.styled';
 import { useMediaQuery } from 'react-responsive';
 import Contact from 'components/Contact/Contact';
 
@@ -30,8 +36,14 @@ export default function LinkNav({ handleToggle, isOpen }) {
         <LinkContainer to="/about" onClick={handleToggle}>
           Про нас
         </LinkContainer>
-        <LinkContainer to="/production" onClick={handleToggle}>
+        <LinkContainer to="/production">
           Продукція
+          <DropList>
+            <DropItem to="/production" onClick={handleToggle}>Вібропреси</DropItem>
+            <DropItem>Бетонозмішувальні комплекси</DropItem>
+            <DropItem>Прес-форми для вібропрессування</DropItem>
+            <DropItem>vibropress</DropItem>
+          </DropList>
         </LinkContainer>
         <LinkContainer to="/service" onClick={handleToggle}>
           Сервіс

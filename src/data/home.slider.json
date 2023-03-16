@@ -1,15 +1,15 @@
 [
   {
-    "id": 5,
-    "name": "slide6",
-    "imgUrl": "/imgs/homeslider/5.jpg",
-    "text": "Прес-форми для вібропресування "
+    "id": 1,
+    "name": "slide1",
+    "imgUrl": "/imgs/homeslider/1.jpg",
+    "text": "Автоматизовані лінії вібропресування"
   },
   {
-    "id": 6,
-    "name": "slide6",
-    "imgUrl": "/imgs/homeslider/6.jpg",
-    "text": "Додаткове обладнання для виробництва\nвібропресованої продукції"
+    "id": 2,
+    "name": "slide2",
+    "imgUrl": "/imgs/homeslider/2.jpg",
+    "text": "Проектування автоматичних бетонних заводів 'під ключ'"
   },
   {
     "id": 3,
@@ -24,15 +24,15 @@
     "text": "Виконання механіної обробки деталей"
   },
   {
-    "id": 1,
-    "name": "slide1",
-    "imgUrl": "/imgs/homeslider/1.jpg",
-    "text": "Автоматизовані лінії вібропресування"
+    "id": 5,
+    "name": "slide6",
+    "imgUrl": "/imgs/homeslider/5.jpg",
+    "text": "Прес-форми для вібропресування "
   },
   {
-    "id": 2,
-    "name": "slide2",
-    "imgUrl": "/imgs/homeslider/2.jpg",
-    "text": "Проектування автоматичних бетонних заводів 'під ключ'"
+    "id": 6,
+    "name": "slide6",
+    "imgUrl": "/imgs/homeslider/6.jpg",
+    "text": "Додаткове обладнання для виробництва\nвібропресованої продукції"
   }
 ]

@@ -26,7 +26,21 @@ export const ProductionText = styled.p`
   font-size: 18px;
   padding: 5px 0px;
   text-indent: 40px;
-  /* text-align: center; */
+  text-align: justify;
+  hyphens: auto;
+`;
+
+export const ProductionTitlePrincip = styled.p`
+  font-size: 18px;
+  font-weight: bold;
+  text-align: start;
+  text-indent: 40px;
+`;
+
+export const ProductionTextPrincip = styled.p`
+  font-size: 18px;
+  padding: 5px 0px;
+  text-indent: 40px;
   text-align: justify;
   hyphens: auto;
 `;
@@ -76,12 +90,15 @@ export const Table = styled.table`
   margin: 0 auto;
   border-collapse: collapse;
   width: 100%;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
 
   @media (max-width: 480px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const TheadTitle = styled.p`

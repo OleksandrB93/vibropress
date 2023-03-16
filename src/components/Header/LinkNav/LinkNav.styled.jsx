@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 import { NavLink } from 'react-router-dom';
 
 export const Box = styled.div`
@@ -35,6 +35,45 @@ export const NavContainer = styled.div`
     }
   }
 `;
+
+export const DropList = styled.ul`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: #c7c7c7a3;
+  border: 1px solid #000;
+  border-radius: 10px;
+  border-top: none;
+  width: 200px;
+  z-index: 999;
+
+  li {
+    padding: 10px;
+  }
+
+  li:hover {
+  }
+  animation: fadeIn 250ms ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+`;
+
+export const DropItem = styled.li``;
+
 export const LinkContainer = styled(NavLink)`
   width: 200px;
   position: relative;
@@ -45,6 +84,11 @@ export const LinkContainer = styled(NavLink)`
   padding: 7px 10px;
   opacity: 1;
 
+  &:hover {
+    ${DropList} {
+      display: block;
+    }
+  }
   @media (min-width: 889px) {
     margin-left: 10px;
   }
