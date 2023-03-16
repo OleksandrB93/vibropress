@@ -4,13 +4,15 @@ import {
   NavContainer,
   Box,
   DropList,
-  DropItem,
   DropListVibro,
   DropItemVibro,
   DropItemVibroPoint,
   DropItemBeton,
   DropItemBetonPoint,
   DropListBeton,
+  DropItemPress,
+  DropItemPressPoint,
+  DropListPress,
 } from './LinkNav.styled';
 import { useMediaQuery } from 'react-responsive';
 import Contact from 'components/Contact/Contact';
@@ -77,8 +79,23 @@ export default function LinkNav({ handleToggle, isOpen }) {
               </DropListBeton>
             </DropItemBeton>
 
-            <DropItem>Прес-форми для вібропрессування</DropItem>
-            <DropItem>vibropress</DropItem>
+            <DropItemPress>
+              Прес-форми для вібропрессування
+              <DropListPress>
+                <DropItemPressPoint>
+                  Прес-форми для дорожнього каміння
+                </DropItemPressPoint>
+                <DropItemPressPoint>
+                  Прес-форми для тротуарної плитки
+                </DropItemPressPoint>
+                <DropItemPressPoint>
+                  Прес-форми для стінових блоків
+                </DropItemPressPoint>
+                <DropItemPressPoint>
+                  Прес-форми для елементів ландшафтного дизайну
+                </DropItemPressPoint>
+              </DropListPress>
+            </DropItemPress>
           </DropList>
         </LinkContainer>
 

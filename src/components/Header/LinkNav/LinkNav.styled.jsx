@@ -158,10 +158,6 @@ export const DropItemVibroPoint = styled.li`
   border-top: none;
 `;
 
-
-
-
-
 export const DropListBeton = styled.ul`
   position: absolute;
   top: 0;
@@ -181,6 +177,33 @@ export const DropItemBeton = styled.li`
 `;
 
 export const DropItemBetonPoint = styled.li`
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: #c7c7c7a3;
+
+  border-top: none;
+`;
+
+export const DropListPress = styled.ul`
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  display: none;
+  border: 1px solid #000;
+`;
+
+export const DropItemPress = styled.li`
+  position: relative;
+  &:hover {
+    ${DropListPress} {
+      display: block;
+    }
+  }
+`;
+
+export const DropItemPressPoint = styled.li`
   text-decoration: none;
   list-style: none;
   color: black;
