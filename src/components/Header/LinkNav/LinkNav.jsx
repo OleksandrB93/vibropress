@@ -51,7 +51,7 @@ export default function LinkNav({ handleToggle, isOpen }) {
         <LinkContainerProd>
           Продукція
           <DropList>
-            <DropItemVibro to="/production" onClick={handleToggle}>
+            <DropItemVibro onClick={handleToggle}>
               Вібропреси
               <DropListVibro>
                 <Li>
