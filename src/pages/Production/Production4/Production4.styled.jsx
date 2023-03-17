@@ -56,24 +56,24 @@ export const PtoductionImg = styled.div`
   justify-content: center;
 
   img {
-    border-radius: 5%;
+    border-radius: px;
 
     margin: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
     @media (max-width: 768px) {
-      width: 150px;
-      height: 250px;
+      width: 300px;
+      /* height: 250px; */
     }
 
     @media (min-width: 768px) {
-      width: 200px;
-      height: 300px;
+      width: 500px;
+      /* height: 300px; */
     }
     @media (min-width: 1200px) {
-      width: 300px;
-      height: 400px;
+      width: 700px;
+      /* height: 400px; */
     }
   }
   figure {
@@ -115,7 +115,7 @@ export const TheadBox = styled.thead`
 `;
 
 export const HeadTr = styled.tr`
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   th {
     text-align: center;
     padding: 10px;

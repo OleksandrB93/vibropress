@@ -63,17 +63,17 @@ export const PtoductionImg = styled.div`
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
     @media (max-width: 768px) {
-      width: 150px;
-      height: 250px;
+      width: 300px;
+      /* height: 250px; */
     }
 
     @media (min-width: 768px) {
-      width: 200px;
-      height: 300px;
+      width: 500px;
+      /* height: 300px; */
     }
     @media (min-width: 1200px) {
-      width: 300px;
-      height: 400px;
+      width: 700px;
+      /* height: 400px; */
     }
   }
   figure {
@@ -115,7 +115,7 @@ export const TheadBox = styled.thead`
 `;
 
 export const HeadTr = styled.tr`
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   th {
     text-align: center;
     padding: 10px;

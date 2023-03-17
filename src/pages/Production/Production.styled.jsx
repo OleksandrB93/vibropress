@@ -90,6 +90,7 @@ export const Table = styled.table`
   margin: 0 auto;
   border-collapse: collapse;
   width: 100%;
+
   @media (min-width: 768px) {
     width: 80%;
   }
@@ -119,6 +120,7 @@ export const HeadTr = styled.tr`
   th {
     text-align: center;
     padding: 10px;
+    border: 1px solid black;
   }
 `;
 
