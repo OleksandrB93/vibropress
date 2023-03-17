@@ -9,7 +9,6 @@ import {
   Tbody,
   PtoductionImg,
   ProductionTextPrincip,
-  ProductionTitlePrincip,
 } from './Production4.styled';
 
 export default function Production2() {
@@ -43,7 +42,7 @@ export default function Production2() {
           У стандартну комплектацію входять вібропрес, системи транспортування
           піддонів, системи транспортування та обробки виробів, автоматизація.
         </ProductionText>
-        <ProductionTitlePrincip>
+        <ProductionText>
           Вібропрес серії PGV-1000 функціонує на основі ПЛК та є повністю
           автоматичним. За рахунок автоматизації всієї лінії вібропресування
           забезпечується однакова якість та кількість виробів. Система
@@ -53,7 +52,7 @@ export default function Production2() {
           виробів на транспортні піддони. Наші системи автоматизації є
           модульними, мають опцію доповнення та проектуються таким чином, щоб у
           майбутньому клієнт міг розширити виробництво.
-        </ProductionTitlePrincip>
+        </ProductionText>
 
         <ProductionTitel>УПРАВЛІННЯ РЕЦЕПТУРАМИ</ProductionTitel>
         <ProductionTextPrincip>
