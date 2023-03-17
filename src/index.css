@@ -11,7 +11,6 @@ body {
   background: linear-gradient(-45deg, #eef2f3, #7da1af, #d5d5d5, #eef2f3);
   background-size: 100% 100%;
   animation: gradient 10s ease infinite;
-  font-family: 'Roboto', sans-serif;
 }
 
 code {

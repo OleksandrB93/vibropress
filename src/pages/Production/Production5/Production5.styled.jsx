@@ -144,3 +144,8 @@ export const Tbody = styled.tbody`
     }
   }
 `;
+
+
+export const FlexBlock = styled.div`
+  display: flex;
+`

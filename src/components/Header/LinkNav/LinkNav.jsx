@@ -14,7 +14,8 @@ import {
   DropItemPress,
   DropItemPressPoint,
   DropListPress,
-  LinkContainerProd, Li
+  LinkContainerProd,
+  Li,
 } from './LinkNav.styled';
 import { useMediaQuery } from 'react-responsive';
 import Contact from 'components/Contact/Contact';
@@ -88,6 +89,15 @@ export default function LinkNav({ handleToggle, isOpen }) {
                     onClick={handleToggle}
                   >
                     Автоматичний Вібропрес PGV-1000
+                  </DropItemVibroPoint>
+                </Li>
+                <Li>
+                  <DropItemVibroPoint
+                    to="/vibropress/model5"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Автоматичні лінії брикетування для металургії
                   </DropItemVibroPoint>
                 </Li>
               </DropListVibro>
