@@ -201,7 +201,6 @@ export const LinkContainerProd = styled.div`
 `;
 
 export const DropListVibro = styled.ul`
-
   width: 180px;
   position: absolute;
   top: 0;

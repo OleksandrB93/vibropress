@@ -166,18 +166,42 @@ export default function LinkNav({ handleToggle, isOpen }) {
             <DropItemPress>
               Прес-форми для вібропрессування
               <DropListPress>
-                <DropItemPressPoint>
-                  Прес-форми для дорожнього каміння
-                </DropItemPressPoint>
-                <DropItemPressPoint>
-                  Прес-форми для тротуарної плитки
-                </DropItemPressPoint>
-                <DropItemPressPoint>
-                  Прес-форми для стінових блоків
-                </DropItemPressPoint>
-                <DropItemPressPoint>
-                  Прес-форми для елементів ландшафтного дизайну
-                </DropItemPressPoint>
+                <Li>
+                  <DropItemPressPoint
+                    to="/press-form/model1"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Прес-форми для дорожнього каміння
+                  </DropItemPressPoint>
+                </Li>
+                <Li>
+                  <DropItemPressPoint
+                    to="/press-form/model2"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Прес-форми для тротуарної плитки
+                  </DropItemPressPoint>
+                </Li>
+                <Li>
+                  <DropItemPressPoint
+                    to="/press-form/model3"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Прес-форми для стінових блоків
+                  </DropItemPressPoint>
+                </Li>
+                <Li>
+                  <DropItemPressPoint
+                    to="/press-form/model4"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Прес-форми для елементів ландшафтного дизайну
+                  </DropItemPressPoint>
+                </Li>
               </DropListPress>
             </DropItemPress>
           </DropList>
