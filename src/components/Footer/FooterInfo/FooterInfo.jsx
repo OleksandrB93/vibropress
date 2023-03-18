@@ -13,7 +13,7 @@ export default function FooterInfo() {
       <LeftInfo>
         <div>
           <img
-            src={process.env.PUBLIC_URL + '/imgs/logo.jpg'}
+            src={process.env.PUBLIC_URL + '/imgs/logo.png'}
             alt="logo"
             width={250}
           />

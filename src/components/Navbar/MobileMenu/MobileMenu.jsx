@@ -6,7 +6,7 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(prevIsOpen => !prevIsOpen);
   };
 
   return (

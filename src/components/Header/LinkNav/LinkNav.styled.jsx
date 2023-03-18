@@ -145,17 +145,17 @@ export const LinkContainerProd = styled.div`
   color: black;
   padding: 7px 10px;
   opacity: 1;
+  &:hover {
+    ${DropList} {
+      display: ${p => (p.isHover ? 'block' : 'block')};
+    }
+  }
   :hover {
     background-color: #020202;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
   }
 
-  &:hover {
-    ${DropList} {
-      display: block;
-    }
-  }
   @media (min-width: 889px) {
     margin-left: 10px;
   }
@@ -201,6 +201,8 @@ export const LinkContainerProd = styled.div`
 `;
 
 export const DropListVibro = styled.ul`
+
+  width: 180px;
   position: absolute;
   top: 0;
   left: 100%;
@@ -230,6 +232,8 @@ export const Li = styled.li`
 
 export const DropItemVibro = styled.li`
   position: relative;
+  font-size: 15px;
+
   &:hover {
     ${DropListVibro} {
       display: block;
@@ -243,9 +247,11 @@ export const DropItemVibroPoint = styled.li`
   list-style: none;
   color: black;
   border-top: none;
+  font-size: 14px;
 `;
 
 export const DropListBeton = styled.ul`
+  width: 180px;
   position: absolute;
   top: 0;
   left: 100%;
@@ -268,6 +274,7 @@ export const DropListBeton = styled.ul`
 
 export const DropItemBeton = styled.li`
   position: relative;
+  font-size: 14px;
   &:hover {
     ${DropListBeton} {
       display: block;
@@ -280,12 +287,15 @@ export const DropItemBetonPoint = styled.li`
   list-style: none;
   color: black;
   background-color: #c7c7c7a3;
+  font-size: 15px;
 
   border-top: none;
 `;
 
 export const DropListPress = styled.ul`
   position: absolute;
+  width: 180px;
+
   top: 0;
   left: 100%;
   display: none;
@@ -308,6 +318,8 @@ export const DropListPress = styled.ul`
 
 export const DropItemPress = styled.li`
   position: relative;
+  font-size: 14px;
+
   &:hover {
     ${DropListPress} {
       display: block;
@@ -320,5 +332,6 @@ export const DropItemPressPoint = styled.li`
   list-style: none;
   color: black;
 
+  font-size: 14px;
   border-top: none;
 `;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   LinkContainer,
@@ -21,6 +21,12 @@ import { useMediaQuery } from 'react-responsive';
 import Contact from 'components/Contact/Contact';
 
 export default function LinkNav({ handleToggle, isOpen }) {
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
+  };
+
   useEffect(() => {
     const body = document.body;
     if (isOpen) {
@@ -48,17 +54,20 @@ export default function LinkNav({ handleToggle, isOpen }) {
           Про нас
         </LinkContainer>
 
-        <LinkContainerProd>
+        <LinkContainerProd isHover={hover}>
           Продукція
           <DropList>
-            <DropItemVibro onClick={handleToggle}>
+            <DropItemVibro>
               Вібропреси
-              <DropListVibro>
+              <DropListVibro isHover={hover}>
                 <Li>
                   <DropItemVibroPoint
                     to="/vibropress/model1"
                     as={Link}
-                    onClick={handleToggle}
+                    onClick={() => {
+                      handleToggle && handleToggle();
+                      handleHover();
+                    }}
                   >
                     Вібропрес PGV-120U(М)
                   </DropItemVibroPoint>
@@ -106,13 +115,51 @@ export default function LinkNav({ handleToggle, isOpen }) {
             <DropItemBeton>
               Бетонозмішувальні комплекси
               <DropListBeton>
-                <DropItemBetonPoint>Склади інертних</DropItemBetonPoint>
-                <DropItemBetonPoint>
-                  Бетонозмішувані пристрої
-                </DropItemBetonPoint>
-                <DropItemBetonPoint>Силоси цементу</DropItemBetonPoint>
-                <DropItemBetonPoint>Конвеєрне обладнання</DropItemBetonPoint>
-                <DropItemBetonPoint>Сито вібраційне ВС</DropItemBetonPoint>
+                <Li>
+                  <DropItemBetonPoint
+                    to="/beton/model1"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Склади інертних
+                  </DropItemBetonPoint>
+                </Li>
+                <Li>
+                  <DropItemBetonPoint
+                    to="/beton/model2"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Бетонозмішувані пристрої
+                  </DropItemBetonPoint>
+                </Li>
+                <Li>
+                  <DropItemBetonPoint
+                    to="/beton/model3"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Силоси цементу
+                  </DropItemBetonPoint>
+                </Li>
+                <Li>
+                  <DropItemBetonPoint
+                    to="/beton/model4"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Конвеєрне обладнання
+                  </DropItemBetonPoint>
+                </Li>
+                <Li>
+                  <DropItemBetonPoint
+                    to="/beton/model5"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Сито вібраційне ВС
+                  </DropItemBetonPoint>
+                </Li>
               </DropListBeton>
             </DropItemBeton>
 

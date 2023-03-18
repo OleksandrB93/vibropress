@@ -6,7 +6,7 @@ import {
   FlexBlock,
 } from './Production5.styled';
 
-export default function Production2() {
+export default function Production5() {
   return (
     <ProductionContainer>
       <div>

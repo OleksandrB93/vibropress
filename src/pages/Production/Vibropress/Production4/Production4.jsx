@@ -11,7 +11,7 @@ import {
   ProductionTextPrincip,
 } from './Production4.styled';
 
-export default function Production2() {
+export default function Production4() {
   return (
     <ProductionContainer>
       <div>

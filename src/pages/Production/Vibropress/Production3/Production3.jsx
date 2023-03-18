@@ -13,7 +13,7 @@ import {
   ProductionTitlePrincip,
 } from './Production3.styled';
 
-export default function Production2() {
+export default function Production3() {
   return (
     <ProductionContainer>
       <div>

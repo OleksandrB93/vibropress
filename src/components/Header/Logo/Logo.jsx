@@ -4,9 +4,8 @@ export default function Logo({ isScrolled }) {
   return (
     <LogoContainer isScrolled={isScrolled}>
       <img
-        src={process.env.PUBLIC_URL + '/imgs/logo.jpg'}
+        src={process.env.PUBLIC_URL + '/imgs/logo.png'}
         alt="logo"
-        width={250}
       />
     </LogoContainer>
   );
