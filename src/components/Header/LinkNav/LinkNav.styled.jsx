@@ -46,7 +46,8 @@ export const DropList = styled.ul`
   margin: 0;
   padding: 0;
   color: black;
-  background-color: #c7c7c7a3;
+  background-color: #c7c7c7d6;
+  backdrop-filter: blur(5px);
   border: 1px solid #000;
   width: 200px;
   z-index: 999;
@@ -227,6 +228,7 @@ export const DropListVibro = styled.ul`
 export const Li = styled.li`
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(2px);
 `;
 
 export const DropItemVibro = styled.li`
@@ -238,7 +240,6 @@ export const DropItemVibro = styled.li`
       display: block;
     }
   }
-  background-color: #c7c7c7a3;
 `;
 
 export const DropItemVibroPoint = styled.li`
@@ -256,6 +257,7 @@ export const DropListBeton = styled.ul`
   left: 100%;
   display: none;
   border: 1px solid #000;
+  background-color: #c7c7c7cd;
 
   animation: fadeIn 250ms ease-out;
 
@@ -285,7 +287,6 @@ export const DropItemBetonPoint = styled.li`
   text-decoration: none;
   list-style: none;
   color: black;
-  background-color: #c7c7c7a3;
   font-size: 15px;
 
   border-top: none;
@@ -299,7 +300,7 @@ export const DropListPress = styled.ul`
   left: 100%;
   display: none;
   border: 1px solid #000;
-  background-color: #c7c7c7a3;
+  background-color: #c7c7c7d0;
 
   animation: fadeIn 250ms ease-out;
 

@@ -61,6 +61,7 @@ export default function Slider() {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
+        navigation={true}
         speed={1000}
         breakpoints={breakpoints}
         observer={true}

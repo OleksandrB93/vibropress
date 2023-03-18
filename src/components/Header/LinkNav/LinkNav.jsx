@@ -121,7 +121,7 @@ export default function LinkNav({ handleToggle, isOpen }) {
                     as={Link}
                     onClick={handleToggle}
                   >
-                    Склади інертних
+                    Системи подачі бетонної суміші у вібропрес
                   </DropItemBetonPoint>
                 </Li>
                 <Li>
@@ -130,7 +130,7 @@ export default function LinkNav({ handleToggle, isOpen }) {
                     as={Link}
                     onClick={handleToggle}
                   >
-                    Бетонозмішувані пристрої
+                    Системи дозування інертних матеріалів
                   </DropItemBetonPoint>
                 </Li>
                 <Li>
@@ -139,7 +139,7 @@ export default function LinkNav({ handleToggle, isOpen }) {
                     as={Link}
                     onClick={handleToggle}
                   >
-                    Силоси цементу
+                    Системи приготування бетонної суміші
                   </DropItemBetonPoint>
                 </Li>
                 <Li>
@@ -148,12 +148,21 @@ export default function LinkNav({ handleToggle, isOpen }) {
                     as={Link}
                     onClick={handleToggle}
                   >
-                    Конвеєрне обладнання
+                    Системи зберігання та подачі цементу
                   </DropItemBetonPoint>
                 </Li>
                 <Li>
                   <DropItemBetonPoint
                     to="/beton/model5"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Конвеєрне обладнання
+                  </DropItemBetonPoint>
+                </Li>
+                <Li>
+                  <DropItemBetonPoint
+                    to="/beton/model6"
                     as={Link}
                     onClick={handleToggle}
                   >

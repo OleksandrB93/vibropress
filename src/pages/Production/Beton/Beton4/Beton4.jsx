@@ -63,7 +63,14 @@ export default function Beton4() {
           до 6 м. розбиваються на дві частини, 9-12 м. на три-чотири).
           Вхід/вихід конусний, циліндричний, кубічний.
         </ProductionText>
-
+        <PtoductionImg>
+          <img
+            src={
+              process.env.PUBLIC_URL + '/imgs/production/beton/beton4/46.jpg'
+            }
+            alt="Бетонозмішувач "
+          />
+        </PtoductionImg>
         <PtoductionImg>
           <img
             src={
