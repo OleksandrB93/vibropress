@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vibropress/static/css/main.6c03ab01.css",
-    "main.js": "/vibropress/static/js/main.3340dc80.js",
+    "main.js": "/vibropress/static/js/main.25f0bfb5.js",
     "index.html": "/vibropress/index.html",
     "main.6c03ab01.css.map": "/vibropress/static/css/main.6c03ab01.css.map",
-    "main.3340dc80.js.map": "/vibropress/static/js/main.3340dc80.js.map"
+    "main.25f0bfb5.js.map": "/vibropress/static/js/main.25f0bfb5.js.map"
   },
   "entrypoints": [
     "static/css/main.6c03ab01.css",
-    "static/js/main.3340dc80.js"
+    "static/js/main.25f0bfb5.js"
   ]
 }
