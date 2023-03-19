@@ -69,7 +69,8 @@ export default function Transport1() {
           поворот на 180 °.
         </ProductionText>
         <PtoductionImg>
-          <img style={{width: '250px'}}
+          <img
+            style={{ width: '250px' }}
             src={process.env.PUBLIC_URL + '/imgs/production/transport/33.jpg'}
             alt="Бетонозмішувач "
           />

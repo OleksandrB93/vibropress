@@ -214,7 +214,6 @@ export default function LinkNav({ handleToggle, isOpen }) {
                 </Li>
               </DropListPress>
             </DropItemPress>
-
             <DropItemTrans>
               Транспортна група
               <DropListTrans>
@@ -229,7 +228,7 @@ export default function LinkNav({ handleToggle, isOpen }) {
                 </Li>
                 <Li>
                   <DropItemTransPoint
-                    to="/press-form/model2"
+                    to="/transport/model2"
                     as={Link}
                     onClick={handleToggle}
                   >
@@ -238,11 +237,100 @@ export default function LinkNav({ handleToggle, isOpen }) {
                 </Li>
                 <Li>
                   <DropItemTransPoint
-                    to="/press-form/model3"
+                    to="/transport/model3"
                     as={Link}
                     onClick={handleToggle}
                   >
                     Система з Транспортованими Стелажами
+                  </DropItemTransPoint>
+                </Li>
+              </DropListTrans>
+            </DropItemTrans>
+
+            <DropItemTrans>
+              Допоміжне обладнання
+              <DropListTrans>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model1"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Обладнання для очистки готової продукції
+                  </DropItemTransPoint>
+                </Li>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model2"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Обладнання для вимивання готової продукції
+                  </DropItemTransPoint>
+                </Li>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model3"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Автоматична Спліттерна Установка
+                  </DropItemTransPoint>
+                </Li>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model4"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Системи фарбування виробів
+                  </DropItemTransPoint>
+                </Li>
+
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model5"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Обладнання для змащення та обприскування технологічних
+                    піддонів
+                  </DropItemTransPoint>
+                </Li>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model6"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Обладнання для штучного старіння тротуарної плитки
+                  </DropItemTransPoint>
+                </Li>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model7"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Обладнання для Барабанного старіння
+                  </DropItemTransPoint>
+                </Li>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model8"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Подрібнювач Для бракованих виробів
+                  </DropItemTransPoint>
+                </Li>
+                <Li>
+                  <DropItemTransPoint
+                    to="/help-equip/model9"
+                    as={Link}
+                    onClick={handleToggle}
+                  >
+                    Лінії на базі роботів пакувальників
                   </DropItemTransPoint>
                 </Li>
               </DropListTrans>

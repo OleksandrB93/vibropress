@@ -18,7 +18,18 @@ import PressForm1 from 'pages/Production/PressForm/PressForm1/PressForm1';
 import PressForm2 from 'pages/Production/PressForm/PressForm2/PressForm2';
 import PressForm3 from 'pages/Production/PressForm/PressForm3/PressForm3';
 import PressForm4 from 'pages/Production/PressForm/PressForm4/PressForm4';
-import Transport1 from 'pages/Production/Transport/Transport1';
+import Transport1 from 'pages/Production/Transport/Transport1/Transport1';
+import Transport2 from 'pages/Production/Transport/Transport2/Transport2';
+import Transport3 from 'pages/Production/Transport/Transport3/Transport3';
+import HelpEquip1 from 'pages/Production/HelpEquip/HelpEquip1/HelpEquip1';
+import HelpEquip2 from 'pages/Production/HelpEquip/HelpEquip2/HelpEquip2';
+import HelpEquip3 from 'pages/Production/HelpEquip/HelpEquip3/HelpEquip3';
+import HelpEquip4 from 'pages/Production/HelpEquip/HelpEquip4/HelpEquip4';
+import HelpEquip5 from 'pages/Production/HelpEquip/HelpEquip5/HelpEquip5';
+import HelpEquip6 from 'pages/Production/HelpEquip/HelpEquip6/HelpEquip6';
+import HelpEquip7 from 'pages/Production/HelpEquip/HelpEquip7/HelpEquip7';
+import HelpEquip8 from 'pages/Production/HelpEquip/HelpEquip8/HelpEquip8';
+import HelpEquip9 from 'pages/Production/HelpEquip/HelpEquip9/HelpEquip9';
 
 export const App = () => {
   return (
@@ -45,10 +56,21 @@ export const App = () => {
         <Route path="/press-form/model1" element={<PressForm1 />} />
         <Route path="/press-form/model2" element={<PressForm2 />} />
         <Route path="/press-form/model3" element={<PressForm3 />} />
-        <Route path="/press-form/model4" element={<PressForm4/>} />
+        <Route path="/press-form/model4" element={<PressForm4 />} />
 
-        <Route path="/transport/model1" element={<Transport1/>} />
+        <Route path="/transport/model1" element={<Transport1 />} />
+        <Route path="/transport/model2" element={<Transport2 />} />
+        <Route path="/transport/model3" element={<Transport3 />} />
 
+        <Route path="/help-equip/model1" element={<HelpEquip1 />} />
+        <Route path="/help-equip/model2" element={<HelpEquip2 />} />
+        <Route path="/help-equip/model3" element={<HelpEquip3 />} />
+        <Route path="/help-equip/model4" element={<HelpEquip4 />} />
+        <Route path="/help-equip/model5" element={<HelpEquip5 />} />
+        <Route path="/help-equip/model6" element={<HelpEquip6 />} />
+        <Route path="/help-equip/model7" element={<HelpEquip7 />} />
+        <Route path="/help-equip/model8" element={<HelpEquip8 />} />
+        <Route path="/help-equip/model9" element={<HelpEquip9 />} />
 
         <Route path="/betonomix" element={<Production />} />
         <Route path="/pressform" element={<Production />} />
