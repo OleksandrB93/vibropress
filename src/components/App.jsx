@@ -13,11 +13,13 @@ import Beton22 from 'pages/Production/Beton/Beton22/Beton22';
 import Beton2 from 'pages/Production/Beton/Beton2/Beton2';
 import Beton3 from 'pages/Production/Beton/Beton3/Beton3';
 import Beton4 from 'pages/Production/Beton/Beton4/Beton4';
-import Beton5 from 'pages/Production/PressForm/PressForm1/PressForm1';
 import Beton6 from 'pages/Production/Beton/Beton6/Beton6';
 import PressForm1 from 'pages/Production/PressForm/PressForm1/PressForm1';
 import PressForm2 from 'pages/Production/PressForm/PressForm2/PressForm2';
 import PressForm3 from 'pages/Production/PressForm/PressForm3/PressForm3';
+import PressForm4 from 'pages/Production/PressForm/PressForm4/PressForm4';
+import Transport1 from 'pages/Production/Transport/Transport1';
+
 export const App = () => {
   return (
     <Routes>
@@ -40,10 +42,13 @@ export const App = () => {
         <Route path="/beton/model5" element={<Beton4 />} />
         <Route path="/beton/model6" element={<Beton6 />} />
 
-        <Route path="/press-form/model4" element={<PressForm1 />} />
+        <Route path="/press-form/model1" element={<PressForm1 />} />
         <Route path="/press-form/model2" element={<PressForm2 />} />
         <Route path="/press-form/model3" element={<PressForm3 />} />
-        {/* <Route path="/press-form/model4" element={<PressForm4/>} /> */}
+        <Route path="/press-form/model4" element={<PressForm4/>} />
+
+        <Route path="/transport/model1" element={<Transport1/>} />
+
 
         <Route path="/betonomix" element={<Production />} />
         <Route path="/pressform" element={<Production />} />

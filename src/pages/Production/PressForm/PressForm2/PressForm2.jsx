@@ -52,7 +52,7 @@ export default function PressForm2() {
         <PtoductionImg>
           <img
             src={
-              process.env.PUBLIC_URL + '/imgs/production/press-form/21.jpg'
+              process.env.PUBLIC_URL + '/imgs/production/press-form/press2.jpg'
             }
             alt="Бетонозмішувач "
           />

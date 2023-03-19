@@ -335,3 +335,46 @@ export const DropItemPressPoint = styled.li`
   font-size: 14px;
   border-top: none;
 `;
+
+export const DropListTrans = styled.ul`
+  position: absolute;
+  width: 180px;
+
+  top: 0;
+  left: 100%;
+  display: none;
+  border: 1px solid #000;
+  background-color: #c7c7c7d0;
+
+  animation: fadeIn 250ms ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+`;
+
+export const DropItemTrans = styled.li`
+  position: relative;
+  font-size: 14px;
+  &:hover {
+    ${DropListTrans} {
+      display: block;
+    }
+  }
+`;
+
+export const DropItemTransPoint = styled.li`
+  text-decoration: none;
+  list-style: none;
+  color: black;
+
+  font-size: 14px;
+  border-top: none;
+`;

@@ -3,9 +3,9 @@ import {
   ProductionText,
   ProductionTitel,
   PtoductionImg,
-} from './PressForm3.styled';
+} from './PressForm4.styled';
 
-export default function PressForm2() {
+export default function PressForm4() {
   return (
     <ProductionContainer>
       <div>
@@ -52,7 +52,7 @@ export default function PressForm2() {
         <PtoductionImg>
           <img
             src={
-              process.env.PUBLIC_URL + '/imgs/production/press-form/press3.jpg'
+              process.env.PUBLIC_URL + '/imgs/production/press-form/press4.jpg'
             }
             alt="Бетонозмішувач "
           />
