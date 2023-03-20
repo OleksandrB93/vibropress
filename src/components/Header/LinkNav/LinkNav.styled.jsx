@@ -111,7 +111,7 @@ export const LinkContainer = styled(NavLink)`
     transform: scaleX(0);
 
     @media (max-width: 888.98px) {
-      left: -8%;
+      left: -0%;
     }
   }
 
