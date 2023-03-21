@@ -55,7 +55,7 @@ export default function Slider() {
     <SlideBox>
       <Swiper
         onSlideChangeTransitionEnd={handleSlideChange}
-        modules={[Autoplay, Navigation, Pagination, EffectCoverflow]}
+        modules={[Autoplay, Pagination, EffectCoverflow]}
         autoplay={{
           delay: 6000,
           disableOnInteraction: false,
@@ -64,9 +64,9 @@ export default function Slider() {
         navigation={true}
         speed={1000}
         breakpoints={breakpoints}
-        observer={true}
         grabCursor
-        observeParents={true}
+        slidesPerView={1}
+        slidesPerGroup={1}
         effect="coverflow"
         coverflowEffect={{
           rotate: 15,

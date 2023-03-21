@@ -17,6 +17,7 @@ export const Box = styled.div`
 export const NavContainer = styled.div`
   display: flex;
   @media (max-width: 888.98px) {
+    overflow: auto;
     position: absolute;
     top: 0;
     right: 0;
@@ -24,8 +25,8 @@ export const NavContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    width: 55vw;
-    height: 100vh;
+    width: 70vw;
+    min-height: 100vh; 
     padding: 30px;
 
     padding-top: 80px;
@@ -202,16 +203,23 @@ export const LinkContainerProd = styled.div`
 `;
 
 export const DropListVibro = styled.ul`
-  width: 180px;
+  width: 200px;
   position: absolute;
   top: 0;
   left: 100%;
+
   /* transform: translateX(100%); */
   display: none;
   border: 1px solid #000;
-  background-color: #c7c7c7a3;
+  background-color: #d3d3d3da;
 
   animation: fadeIn 250ms ease-out;
+
+  @media (max-width: 888px) {
+    top: 0%;
+    left: 30%;
+    z-index: 9999;
+  }
 
   @keyframes fadeIn {
     from {
@@ -251,7 +259,7 @@ export const DropItemVibroPoint = styled.li`
 `;
 
 export const DropListBeton = styled.ul`
-  width: 180px;
+  width: 200px;
   position: absolute;
   top: 0;
   left: 100%;
@@ -260,7 +268,11 @@ export const DropListBeton = styled.ul`
   background-color: #c7c7c7cd;
 
   animation: fadeIn 250ms ease-out;
-
+  @media (max-width: 888px) {
+    top: 0%;
+    left: 30%;
+    z-index: 9999;
+  }
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -294,7 +306,7 @@ export const DropItemBetonPoint = styled.li`
 
 export const DropListPress = styled.ul`
   position: absolute;
-  width: 180px;
+  width: 200px;
 
   top: 0;
   left: 100%;
@@ -303,7 +315,12 @@ export const DropListPress = styled.ul`
   background-color: #c7c7c7d0;
 
   animation: fadeIn 250ms ease-out;
+  @media (max-width: 888px) {
+    top: 0%;
+    left: 30%;
 
+    z-index: 9999;
+  }
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -338,7 +355,7 @@ export const DropItemPressPoint = styled.li`
 
 export const DropListTrans = styled.ul`
   position: absolute;
-  width: 180px;
+  width: 200px;
 
   top: 0;
   left: 100%;
@@ -347,7 +364,12 @@ export const DropListTrans = styled.ul`
   background-color: #c7c7c7d0;
 
   animation: fadeIn 250ms ease-out;
+  @media (max-width: 888px) {
+    top: 0%;
+    left: 30%;
 
+    z-index: 9999;
+  }
   @keyframes fadeIn {
     from {
       opacity: 0;

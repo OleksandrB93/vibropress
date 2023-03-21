@@ -1,14 +1,4 @@
 import styled from '@emotion/styled/macro';
-import { keyframes } from '@emotion/react';
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
 
 export const SlideText = styled.p`
   position: absolute;
@@ -25,7 +15,7 @@ export const SlideText = styled.p`
   text-align: center;
   opacity: ${props => (props.isActive ? '1' : '0')};
   transition: transform 0.8s ease-out, opacity 0.3s ease-out;
-  animation: ${fadeIn} 0.5s ease-out forwards;
+
   
   @media (max-width: 768px) {
     font-size: 10px;
