@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { SlideBox } from './Swiper.styled';
-import { Autoplay, Navigation, Pagination, EffectCoverflow } from 'swiper';
+import { Autoplay, Pagination, EffectCoverflow } from 'swiper';
 
 const breakpoints = {
   320: {
