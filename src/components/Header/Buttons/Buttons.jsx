@@ -1,6 +1,6 @@
 import React from 'react';
 // import { GrLanguage } from 'react-icons/gr';
-import { SiYoutube } from 'react-icons/si';
+// import { SiYoutube } from 'react-icons/si';
 import { ButtonsContainer } from './Buttons.styled';
 
 export default function Buttons() {
