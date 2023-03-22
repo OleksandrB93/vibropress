@@ -26,7 +26,7 @@ export const NavContainer = styled.div`
     flex-direction: column;
 
     width: 70vw;
-    min-height: 100vh; 
+    min-height: 100vh;
     padding: 30px;
 
     padding-top: 80px;
@@ -41,8 +41,8 @@ export const NavContainer = styled.div`
 export const DropList = styled.ul`
   position: absolute;
   top: 100%;
-  left: 0;
-  display: none;
+  left: 50%;
+  transform: translateX(-50%);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -50,26 +50,21 @@ export const DropList = styled.ul`
   background-color: #c7c7c7d6;
   backdrop-filter: blur(5px);
   border: 1px solid #000;
-  width: 200px;
+  border-radius: 15px;
   z-index: 999;
+  white-space: nowrap;
 
   li {
-    padding: 10px;
+    display: inline-block;
+    padding:10px;
+    font-size: 20px;
+    /* pointer-events: none; */
   }
 
   li:hover {
-  }
-  animation: fadeIn 250ms ease-out;
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    background-color: black;
+    color: orange;
+    border-radius: 15px;
   }
 `;
 
@@ -81,7 +76,7 @@ export const LinkContainer = styled(NavLink)`
   justify-content: center;
   position: relative;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: black;
   padding: 7px 10px;
@@ -142,16 +137,16 @@ export const LinkContainerProd = styled.div`
   justify-content: center;
   position: relative;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: black;
   padding: 7px 10px;
   opacity: 1;
-  &:hover {
+  /* &:hover {
     ${DropList} {
       display: ${p => (p.isHover ? 'block' : 'block')};
     }
-  }
+  } */
   :hover {
     background-color: #020202;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

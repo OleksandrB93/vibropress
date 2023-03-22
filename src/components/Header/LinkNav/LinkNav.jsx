@@ -1,47 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import DropSlider from 'components/DropSlider/DropSlider';
 import {
   LinkContainer,
   NavContainer,
   Box,
   DropList,
-  DropListVibro,
-  DropItemVibro,
-  DropItemVibroPoint,
-  DropItemBeton,
-  DropItemBetonPoint,
-  DropListBeton,
-  DropItemPress,
-  DropItemPressPoint,
-  DropListPress,
   LinkContainerProd,
-  Li,
-  DropItemTrans,
-  DropListTrans,
-  DropItemTransPoint,
 } from './LinkNav.styled';
+import { DropSliderContainer } from 'components/DropSlider/DropSlider.styled';
 import { useMediaQuery } from 'react-responsive';
 import Contact from 'components/Contact/Contact';
+import dropvibro from '../../../data/dropvibro.json';
+import dropbeton from '../../../data/dropbeton.json';
+import droppress from '../../../data/droppress.json';
+import droptransport from '../../../data/droptransport.json';
+import drophelp from '../../../data/drophelp.json';
 
 export default function LinkNav({ handleToggle, isOpen }) {
-  const [hover, setHover] = useState(false);
+  const [dropSliders, setDropSliders] = useState({
+    vibro: false,
+    beton: false,
+    press: false,
+    trans: false,
+    help: false,
+  });
 
-  const handleHover = () => {
-    setHover(!hover);
+  const [dropMenu, setDropMenu] = useState(false);
+
+  const handleSlider = key => {
+    setDropSliders(prevDropSliders => ({
+      ...prevDropSliders,
+      [key]: !prevDropSliders[key],
+    }));
   };
 
-  useEffect(() => {
-    const body = document.body;
-    if (isOpen) {
-      body.style.overflow = 'hidden';
-    } else {
-      body.style.overflow = 'auto';
-    }
+  const handleDropMenu = () => {
+    setDropMenu(!dropMenu);
+  };
 
-    return () => {
-      body.style.overflow = 'auto';
-    };
-  }, [isOpen]);
+  const handleSliderClick = event => {
+    event.stopPropagation();
+  };
 
   const maxLaptop = useMediaQuery({
     query: '(max-width: 768px)',
@@ -57,287 +56,108 @@ export default function LinkNav({ handleToggle, isOpen }) {
           Про нас
         </LinkContainer>
 
-        <LinkContainerProd isHover={hover}>
+        <LinkContainerProd onClick={handleDropMenu}>
           Продукція
-          <DropList>
-            <DropItemVibro>
-              Вібропреси
-              <DropListVibro isHover={hover}>
-                <Li>
-                  <DropItemVibroPoint
-                    to="/vibropress/model1"
-                    as={Link}
-                    onClick={() => {
-                      handleToggle && handleToggle();
-                      handleHover();
-                    }}
-                  >
-                    Вібропрес PGV-120U(М)
-                  </DropItemVibroPoint>
-                </Li>
-                <Li>
-                  <DropItemVibroPoint
-                    to="/vibropress/model2"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Крокуючий Вібропрес PGV-W
-                  </DropItemVibroPoint>
-                </Li>
-                <Li>
-                  <DropItemVibroPoint
-                    to="/vibropress/model3"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Автоматичний Вібропрес PGV-400
-                  </DropItemVibroPoint>
-                </Li>
-
-                <Li>
-                  <DropItemVibroPoint
-                    to="/vibropress/model4"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Автоматичний Вібропрес PGV-1000
-                  </DropItemVibroPoint>
-                </Li>
-                <Li>
-                  <DropItemVibroPoint
-                    to="/vibropress/model5"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Автоматичні лінії брикетування для металургії
-                  </DropItemVibroPoint>
-                </Li>
-              </DropListVibro>
-            </DropItemVibro>
-            <DropItemBeton>
-              Бетонозмішувальні комплекси
-              <DropListBeton>
-                <Li>
-                  <DropItemBetonPoint
-                    to="/beton/model1"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Системи подачі бетонної суміші у вібропрес
-                  </DropItemBetonPoint>
-                </Li>
-                <Li>
-                  <DropItemBetonPoint
-                    to="/beton/model2"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Системи дозування інертних матеріалів
-                  </DropItemBetonPoint>
-                </Li>
-                <Li>
-                  <DropItemBetonPoint
-                    to="/beton/model3"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Системи приготування бетонної суміші
-                  </DropItemBetonPoint>
-                </Li>
-                <Li>
-                  <DropItemBetonPoint
-                    to="/beton/model4"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Системи зберігання та подачі цементу
-                  </DropItemBetonPoint>
-                </Li>
-                <Li>
-                  <DropItemBetonPoint
-                    to="/beton/model5"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Конвеєрне обладнання
-                  </DropItemBetonPoint>
-                </Li>
-                <Li>
-                  <DropItemBetonPoint
-                    to="/beton/model6"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Сито вібраційне ВС
-                  </DropItemBetonPoint>
-                </Li>
-              </DropListBeton>
-            </DropItemBeton>
-            <DropItemPress>
-              Прес-форми для вібропрессування
-              <DropListPress>
-                <Li>
-                  <DropItemPressPoint
-                    to="/press-form/model1"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Прес-форми для дорожнього каміння
-                  </DropItemPressPoint>
-                </Li>
-                <Li>
-                  <DropItemPressPoint
-                    to="/press-form/model2"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Прес-форми для тротуарної плитки
-                  </DropItemPressPoint>
-                </Li>
-                <Li>
-                  <DropItemPressPoint
-                    to="/press-form/model3"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Прес-форми для стінових блоків
-                  </DropItemPressPoint>
-                </Li>
-                <Li>
-                  <DropItemPressPoint
-                    to="/press-form/model4"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Прес-форми для елементів ландшафтного дизайну
-                  </DropItemPressPoint>
-                </Li>
-              </DropListPress>
-            </DropItemPress>
-            <DropItemTrans>
-              Транспортна група
-              <DropListTrans>
-                <Li>
-                  <DropItemTransPoint
-                    to="/transport/model1"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Система з транспортно-складною групою (ТСГ)
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/transport/model2"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Система з піддонами на ніжках
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/transport/model3"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Система з Транспортованими Стелажами
-                  </DropItemTransPoint>
-                </Li>
-              </DropListTrans>
-            </DropItemTrans>
-
-            <DropItemTrans>
-              Допоміжне обладнання
-              <DropListTrans>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model1"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Обладнання для очистки готової продукції
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model2"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Обладнання для вимивання готової продукції
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model3"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Автоматична Спліттерна Установка
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model4"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Системи фарбування виробів
-                  </DropItemTransPoint>
-                </Li>
-
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model5"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Обладнання для змащення та обприскування технологічних
-                    піддонів
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model6"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Обладнання для штучного старіння тротуарної плитки
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model7"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Обладнання для Барабанного старіння
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model8"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Подрібнювач Для бракованих виробів
-                  </DropItemTransPoint>
-                </Li>
-                <Li>
-                  <DropItemTransPoint
-                    to="/help-equip/model9"
-                    as={Link}
-                    onClick={handleToggle}
-                  >
-                    Лінії на базі роботів пакувальників
-                  </DropItemTransPoint>
-                </Li>
-              </DropListTrans>
-            </DropItemTrans>
-          </DropList>
+          {dropMenu && (
+            <DropList>
+              <li
+                key="vibro"
+                onMouseEnter={() => handleSlider('vibro')}
+                onMouseLeave={() => handleSlider('vibro')}
+                onClick={handleSliderClick}
+              >
+                Вібропреси
+              </li>
+              <li
+                key="beton"
+                onMouseEnter={() => handleSlider('beton')}
+                onMouseLeave={() => handleSlider('beton')}
+                onClick={handleSliderClick}
+              >
+                Бетонозмішувальні комплекси
+              </li>
+              <li
+                key="press"
+                onMouseEnter={() => handleSlider('press')}
+                onMouseLeave={() => handleSlider('press')}
+                onClick={handleSliderClick}
+              >
+                Прес-форми
+              </li>
+              <li
+                key="trans"
+                onMouseEnter={() => handleSlider('trans')}
+                onMouseLeave={() => handleSlider('trans')}
+                onClick={handleSliderClick}
+              >
+                Транспортна група
+              </li>
+              <li
+                key="help"
+                onMouseEnter={() => handleSlider('help')}
+                onMouseLeave={() => handleSlider('help')}
+                onClick={handleSliderClick}
+              >
+                Допоміжне
+              </li>
+            </DropList>
+          )}
+          {dropSliders.vibro && (
+            <DropSliderContainer
+              onMouseEnter={() => handleSlider('vibro')}
+              onMouseLeave={() => handleSlider('vibro')}
+            >
+              <DropSlider
+                dropSlider={dropvibro}
+                handleSlider={() => handleSlider('vibro')}
+              />
+            </DropSliderContainer>
+          )}
+          {dropSliders.beton && (
+            <DropSliderContainer
+              onMouseEnter={() => handleSlider('beton')}
+              onMouseLeave={() => handleSlider('beton')}
+            >
+              <DropSlider
+                dropSlider={dropbeton}
+                handleSlider={() => handleSlider('beton')}
+              />
+            </DropSliderContainer>
+          )}
+          {dropSliders.press && (
+            <DropSliderContainer
+              onMouseEnter={() => handleSlider('press')}
+              onMouseLeave={() => handleSlider('press')}
+            >
+              <DropSlider
+                dropSlider={droppress}
+                handleSlider={() => handleSlider('press')}
+              />
+            </DropSliderContainer>
+          )}
+          {dropSliders.trans && (
+            <DropSliderContainer
+              onMouseEnter={() => handleSlider('trans')}
+              onMouseLeave={() => handleSlider('trans')}
+            >
+              <DropSlider
+                dropSlider={droptransport}
+                handleSlider={() => handleSlider('trans')}
+              />
+            </DropSliderContainer>
+          )}
+          {dropSliders.help && (
+            <DropSliderContainer
+              onMouseEnter={() => handleSlider('help')}
+              onMouseLeave={() => handleSlider('help')}
+            >
+              <DropSlider
+                dropSlider={drophelp}
+                handleSlider={() => handleSlider('help')}
+              />
+            </DropSliderContainer>
+          )}
         </LinkContainerProd>
-
         <LinkContainer to="/service" onClick={handleToggle}>
           Сервіс
         </LinkContainer>

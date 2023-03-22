@@ -12,7 +12,7 @@ export const NavbarContainer = styled.header`
   transition: height 0.3s;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

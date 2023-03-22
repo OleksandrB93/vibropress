@@ -10,7 +10,7 @@ import {
   Tbody,
   PtoductionImg,
   ProductionTextPrincip,
-  ProductionTitlePrincip,
+  // ProductionTitlePrincip,
 } from './Production3.styled';
 
 export default function Production3() {
@@ -140,7 +140,7 @@ export default function Production3() {
           </tr>
         </Tbody>
       </Table>
-      <ProductionTitlePrincip>
+      {/* <ProductionTitlePrincip>
         Основні переваги використання крокуючого вібропресу:
       </ProductionTitlePrincip>
       <ProductionTextPrincip>
@@ -169,7 +169,7 @@ export default function Production3() {
       <ProductionTextPrincip>
         За бажанням замовника за ескізами ми можемо виготовити будь-які
         прес-форми для пресуючого обладнання.
-      </ProductionTextPrincip>
+      </ProductionTextPrincip> */}
     </ProductionContainer>
   );
 }

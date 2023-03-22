@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "slide1",
+    "imgUrl": "/imgs/production/help-equip/11.jpg",
+    "text": "Обладнання для очистки готової продукції",
+    "path": "/help-equip/model1"
+  },
+  {
+    "id": 2,
+    "name": "slide2",
+    "imgUrl": "/imgs/production/help-equip/21.jpg",
+    "text": "Обладнання для вимивання готової продукції",
+    "path": "/help-equip/model2"
+  },
+  {
+    "id": 3,
+    "name": "slide3",
+    "imgUrl": "/imgs/production/help-equip/31.jpg",
+    "text": "Автоматична Спліттерна Установка",
+    "path": "/help-equip/model3"
+  },
+  {
+    "id": 4,
+    "name": "slide4",
+    "imgUrl": "/imgs/production/help-equip/41.jpg",
+    "text": "Системи фарбування виробів 'ColorMix'",
+    "path": "/help-equip/model4"
+  },
+  {
+    "id": 5,
+    "name": "slide6",
+    "imgUrl": "/imgs/production/help-equip/51.jpg",
+    "text": "Обладнання для змащення та обприскування технологічних піддонів",
+    "path": "/help-equip/model5"
+  },
+  {
+    "id": 6,
+    "name": "slide6",
+    "imgUrl": "/imgs/production/help-equip/62.jpg",
+    "text": "Обладнання для штучного старіння тротуарної плитки",
+    "path": "/help-equip/model6"
+  },
+  {
+    "id": 7,
+    "name": "slide7",
+    "imgUrl": "/imgs/production/help-equip/71.jpg",
+    "text": "Обладнання для Барабанного старіння",
+    "path": "/help-equip/model7"
+  },
+  {
+    "id": 8,
+    "name": "slide8",
+    "imgUrl": "/imgs/production/help-equip/82.jpg",
+    "text": "Подрібнювач для бракованих виробів",
+    "path": "/help-equip/model8"
+  },
+  {
+    "id": 9,
+    "name": "slide9",
+    "imgUrl": "/imgs/production/help-equip/91.jpg",
+    "text": "Лінії на базі роботів пакувальників",
+    "path": "/help-equip/model9"
+  }
+]

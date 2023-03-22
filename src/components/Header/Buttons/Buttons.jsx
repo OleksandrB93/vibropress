@@ -9,9 +9,9 @@ export default function Buttons() {
       {/* <button>
         <GrLanguage size={25} />
       </button> */}
-      <a href="https://www.youtube.com/@motorika120">
+      {/* <a href="https://www.youtube.com/@motorika120">
         <SiYoutube size={30} color={'#ff0000'} />
-      </a>
+      </a> */}
     </ButtonsContainer>
   );
 }

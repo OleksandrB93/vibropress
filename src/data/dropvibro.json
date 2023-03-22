@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "slide1",
+    "imgUrl": "/imgs/production/1.jpg",
+    "text": "Вібропрес PGV-120U",
+    "path": "/vibropress/model1"
+  },
+  {
+    "id": 2,
+    "name": "slide2",
+    "imgUrl": "/imgs/production/2.jpg",
+    "text": "Вібропрес PGV-120М",
+    "path": "/vibropress/model1"
+  },
+  {
+    "id": 3,
+    "name": "slide3",
+    "imgUrl": "/imgs/production/vibropress/product2.jpg",
+    "text": "Крокуючий Вібропрес PGV-W",
+    "path": "/vibropress/model2"
+  },
+  {
+    "id": 4,
+    "name": "slide4",
+    "imgUrl": "/imgs/production/vibropress/product3.jpg",
+    "text": "Автоматичний Вібропрес PGV-400",
+    "path": "/vibropress/model3"
+  },
+  {
+    "id": 5,
+    "name": "slide6",
+    "imgUrl": "/imgs/production/vibropress/product4.jpg",
+    "text": "Автоматичний Вібропрес PGV-1000",
+    "path": "/vibropress/model4"
+  },
+  {
+    "id": 6,
+    "name": "slide6",
+    "imgUrl": "/imgs/production/vibropress/product51.jpg",
+    "text": "Автоматичні лінії брикетування для металургії",
+    "path": "/vibropress/model5"
+  }
+]

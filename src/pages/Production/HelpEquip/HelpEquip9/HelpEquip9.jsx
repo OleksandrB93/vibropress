@@ -9,7 +9,7 @@ export default function HelpEquip9() {
   return (
     <ProductionContainer>
       <div>
-        <ProductionTitel>Лінії на базі роботів пакувальників</ProductionTitel>
+        <ProductionTitel>Лінії на базі роботів пакувальників "(палетайзер)"</ProductionTitel>
       </div>
       <div>
         <ProductionText>

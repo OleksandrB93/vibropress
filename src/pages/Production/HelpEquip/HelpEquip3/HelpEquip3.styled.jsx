@@ -78,13 +78,13 @@ export const PtoductionImg = styled.div`
     }
 
     @media (min-width: 620px) {
-      width: 250px;
+      width: 300px;
     }
     @media (min-width: 1000px) {
-      width: 380px;
+      width: 500px;
     }
     @media (min-width: 1500px) {
-      width: 500px;
+      width: 700px;
     }
   }
   figure {

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "slide1",
+    "imgUrl": "/imgs/production/press-form/press1.jpg",
+    "text": "Прес-форми для вібропрессування",
+    "path": "/press-form/model"
+  },
+  {
+    "id": 2,
+    "name": "slide2",
+    "imgUrl": "/imgs/production/press-form/press2.jpg",
+    "text": "Прес-форми для вібропрессування",
+    "path": "/press-form/model2"
+  },
+  {
+    "id": 3,
+    "name": "slide3",
+    "imgUrl": "/imgs/production/press-form/press3.jpg",
+    "text": "Прес-форми для вібропрессування",
+    "path": "/press-form/model3"
+  },
+  {
+    "id": 4,
+    "name": "slide1",
+    "imgUrl": "/imgs/production/press-form/press1.jpg",
+    "text": "Прес-форми для вібропрессування",
+    "path": "/press-form/model"
+  },
+  {
+    "id": 5,
+    "name": "slide2",
+    "imgUrl": "/imgs/production/press-form/press2.jpg",
+    "text": "Прес-форми для вібропрессування",
+    "path": "/press-form/model2"
+  },
+  {
+    "id": 6,
+    "name": "slide3",
+    "imgUrl": "/imgs/production/press-form/press3.jpg",
+    "text": "Прес-форми для вібропрессування",
+    "path": "/press-form/model3"
+  }
+]

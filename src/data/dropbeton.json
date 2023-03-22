@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "slide1",
+    "imgUrl": "/imgs/production/beton/1/11.jpg",
+    "text": "Системи подачі бетонної суміші у вібропрес",
+    "path": "/beton/model1"
+  },
+  {
+    "id": 2,
+    "name": "slide2",
+    "imgUrl": "/imgs/production/beton/beton5/50.jpg",
+    "text": "Системи дозування інертних матеріалів",
+    "path": "/beton/model2"
+  },
+  {
+    "id": 3,
+    "name": "slide3",
+    "imgUrl": "/imgs/production/beton/beton2/21.jpg",
+    "text": "Системи приготування бетонної суміші",
+    "path": "/beton/model3"
+  },
+  {
+    "id": 4,
+    "name": "slide4",
+    "imgUrl": "/imgs/production/beton/beton3/31.jpg",
+    "text": "Системи зберігання та подачі цементу",
+    "path": "/beton/model4"
+  },
+  {
+    "id": 5,
+    "name": "slide6",
+    "imgUrl": "/imgs/production/beton/beton4/46.jpg",
+    "text": "Конвеєрне обладнання",
+    "path": "/beton/model5"
+  },
+  {
+    "id": 6,
+    "name": "slide6",
+    "imgUrl": "/imgs/production/press-form/51.jpg",
+    "text": "Сито вібраційне ВС",
+    "path": "/beton/model5"
+  }
+]

@@ -27,13 +27,6 @@ export const ProductionText = styled.p`
   text-indent: 40px;
   text-align: justify;
   hyphens: auto;
-  
-  background-color: #e7e9ea;
-  padding: 10px 15px;
-  margin: 10px 0;
-  border-radius: 15px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 `;
 
 export const ProductionTitlePrincip = styled.p`
