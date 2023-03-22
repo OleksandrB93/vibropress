@@ -44,3 +44,17 @@ h3 {
   word-wrap: break-word;
   hyphens: auto;
 } */
+
+body::-webkit-scrollbar {
+  width: 12px; /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: #8badb2; /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff8000; /* цвет бегунка */
+  border-radius: 15px; /* округлось бегунка */
+  border: 1px solid #000000b9; /*отступ вокруг бегунка*/
+}

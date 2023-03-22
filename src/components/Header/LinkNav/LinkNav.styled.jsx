@@ -16,6 +16,8 @@ export const Box = styled.div`
 
 export const NavContainer = styled.div`
   display: flex;
+  text-transform: uppercase;
+  font-style: italic;
   @media (max-width: 888.98px) {
     overflow: auto;
     position: absolute;
@@ -40,7 +42,7 @@ export const NavContainer = styled.div`
 
 export const DropList = styled.ul`
   position: absolute;
-  top: 100%;
+  top: 130%;
   left: 50%;
   transform: translateX(-50%);
   list-style: none;
@@ -57,7 +59,7 @@ export const DropList = styled.ul`
   li {
     display: inline-block;
     padding:10px;
-    font-size: 20px;
+    font-size: 16px;
     /* pointer-events: none; */
   }
 
@@ -68,7 +70,6 @@ export const DropList = styled.ul`
   }
 `;
 
-export const DropItem = styled.li``;
 
 export const LinkContainer = styled(NavLink)`
   width: 100px;
@@ -81,35 +82,6 @@ export const LinkContainer = styled(NavLink)`
   color: black;
   padding: 7px 10px;
   opacity: 1;
-
-  &:hover {
-    ${DropList} {
-      display: block;
-    }
-  }
-  @media (min-width: 889px) {
-    margin-left: 10px;
-  }
-
-  @media (max-width: 888.98px) {
-    margin-bottom: 10px;
-  }
-
-  &:before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0%;
-    bottom: 0px;
-    border-bottom: 3px solid black;
-    transition: transform 250ms ease-out;
-    transform-origin: center;
-    transform: scaleX(0);
-
-    @media (max-width: 888.98px) {
-      left: -0%;
-    }
-  }
 
   &:hover:not(.active),
   &:focus-visible:not(.active) {
@@ -132,7 +104,6 @@ export const LinkContainer = styled(NavLink)`
 `;
 export const LinkContainerProd = styled.div`
   cursor: pointer;
-  width: 100px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -140,8 +111,9 @@ export const LinkContainerProd = styled.div`
   font-size: 20px;
   font-weight: bold;
   color: black;
-  padding: 7px 10px;
+  padding: 7px 15px;
   opacity: 1;
+  margin-right: 8px;
   /* &:hover {
     ${DropList} {
       display: ${p => (p.isHover ? 'block' : 'block')};
@@ -149,7 +121,7 @@ export const LinkContainerProd = styled.div`
   } */
   :hover {
     background-color: #020202;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(255, 166, 0, 0.841) 0px 5px 15px;
     border-radius: 10px;
   }
 
@@ -195,203 +167,4 @@ export const LinkContainerProd = styled.div`
   &.active:before {
     border-color: #ff8900;
   }
-`;
-
-export const DropListVibro = styled.ul`
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: 100%;
-
-  /* transform: translateX(100%); */
-  display: none;
-  border: 1px solid #000;
-  background-color: #d3d3d3da;
-
-  animation: fadeIn 250ms ease-out;
-
-  @media (max-width: 888px) {
-    top: 0%;
-    left: 30%;
-    z-index: 9999;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-`;
-
-export const Li = styled.li`
-  display: flex;
-  flex-direction: column;
-  backdrop-filter: blur(2px);
-`;
-
-export const DropItemVibro = styled.li`
-  position: relative;
-  font-size: 15px;
-
-  &:hover {
-    ${DropListVibro} {
-      display: block;
-    }
-  }
-`;
-
-export const DropItemVibroPoint = styled.li`
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  border-top: none;
-  font-size: 14px;
-`;
-
-export const DropListBeton = styled.ul`
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  display: none;
-  border: 1px solid #000;
-  background-color: #c7c7c7cd;
-
-  animation: fadeIn 250ms ease-out;
-  @media (max-width: 888px) {
-    top: 0%;
-    left: 30%;
-    z-index: 9999;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-`;
-
-export const DropItemBeton = styled.li`
-  position: relative;
-  font-size: 14px;
-  &:hover {
-    ${DropListBeton} {
-      display: block;
-    }
-  }
-`;
-
-export const DropItemBetonPoint = styled.li`
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  font-size: 15px;
-
-  border-top: none;
-`;
-
-export const DropListPress = styled.ul`
-  position: absolute;
-  width: 200px;
-
-  top: 0;
-  left: 100%;
-  display: none;
-  border: 1px solid #000;
-  background-color: #c7c7c7d0;
-
-  animation: fadeIn 250ms ease-out;
-  @media (max-width: 888px) {
-    top: 0%;
-    left: 30%;
-
-    z-index: 9999;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-`;
-
-export const DropItemPress = styled.li`
-  position: relative;
-  font-size: 14px;
-
-  &:hover {
-    ${DropListPress} {
-      display: block;
-    }
-  }
-`;
-
-export const DropItemPressPoint = styled.li`
-  text-decoration: none;
-  list-style: none;
-  color: black;
-
-  font-size: 14px;
-  border-top: none;
-`;
-
-export const DropListTrans = styled.ul`
-  position: absolute;
-  width: 200px;
-
-  top: 0;
-  left: 100%;
-  display: none;
-  border: 1px solid #000;
-  background-color: #c7c7c7d0;
-
-  animation: fadeIn 250ms ease-out;
-  @media (max-width: 888px) {
-    top: 0%;
-    left: 30%;
-
-    z-index: 9999;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-`;
-
-export const DropItemTrans = styled.li`
-  position: relative;
-  font-size: 14px;
-  &:hover {
-    ${DropListTrans} {
-      display: block;
-    }
-  }
-`;
-
-export const DropItemTransPoint = styled.li`
-  text-decoration: none;
-  list-style: none;
-  color: black;
-
-  font-size: 14px;
-  border-top: none;
 `;

@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import LinkNav from 'components/Header/LinkNav/LinkNav';
 import Logo from 'components/Header/Logo/Logo';
-import Buttons from 'components/Header/Buttons/Buttons';
+// import Buttons from 'components/Header/Buttons/Buttons';
 import { NavbarContainer } from './Navbar.styled';
 import Footer from 'components/Footer/Footer';
 import Contact from 'components/Contact/Contact';
@@ -42,7 +42,7 @@ export default function Navbar() {
       <NavbarContainer isScrolled={isScrolled}>
         <Logo isScrolled={isScrolled}/>
         {minLaptop && <LinkNav />}
-        <Buttons />
+        {/* <Buttons /> */}
         {maxLaptop && <MobileMenu />}
         {minLaptop && <Contact />}
       </NavbarContainer>

@@ -21,21 +21,21 @@
     "path": "/transport/model3"
   },
   {
-    "id": 1,
+    "id": 4,
     "name": "slide1",
     "imgUrl": "/imgs/production/transport/11.jpg",
     "text": "Система з транспортно-складною групою (ТСГ)",
     "path": "/transport/model1"
   },
   {
-    "id": 2,
+    "id": 5,
     "name": "slide2",
     "imgUrl": "/imgs/production/transport/44.jpg",
     "text": "Система з піддонами на ніжках",
     "path": "/transport/model2"
   },
   {
-    "id": 3,
+    "id": 6,
     "name": "slide3",
     "imgUrl": "/imgs/production/transport/66.jpg",
     "text": "Система З Транспортованими Стелажами",

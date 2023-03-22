@@ -8,9 +8,7 @@ import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Autoplay, Pagination } from 'swiper';
-// import required modules
-// import { Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 
 import {
   SliderContainer,
@@ -20,19 +18,20 @@ import {
 } from './DropSlider.styled';
 SwiperCore.use([Navigation]);
 
-export default function DropSlider({ dropSlider }) {
+export default function DropSlider({handleSlider, dropSlider }) {
   return (
     <div>
       <Backdrop></Backdrop>
       <SliderContainer>
         <Swiper
-         modules={[Autoplay, Pagination]}
+         navigation={true}
+         modules={[Pagination, Navigation]}
           pagination={{
             type: 'bullets',
             clickable: true,
             dynamicBullets: true,
           }}
-          navigation
+
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -53,9 +52,9 @@ export default function DropSlider({ dropSlider }) {
           }}
         >
           {dropSlider.map(dropSlide => (
-            <SliderSlide>
-              <SwiperSlide key={uuidv4()}>
-                <Link to={dropSlide.path} >
+            <SliderSlide key={uuidv4()}>
+              <SwiperSlide>
+                <Link to={dropSlide.path} onClick={handleSlider}>
                   <SlideImg
                     src={process.env.PUBLIC_URL + dropSlide.imgUrl}
                     alt="name"
@@ -65,7 +64,7 @@ export default function DropSlider({ dropSlider }) {
               </SwiperSlide>
             </SliderSlide>
           ))}
-          <div className="swiper-pagin"></div>
+          <div className="swiper-pagination"></div>
         </Swiper>
       </SliderContainer>
     </div>

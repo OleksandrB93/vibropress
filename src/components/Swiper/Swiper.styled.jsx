@@ -9,9 +9,6 @@ export const SlideBox = styled.div`
     height: 80px;
     width: 40px;
     transform: translateY(-50%);
-    /* border: 1px solid red; */
-    /* border-radius: 5px;
-    background-color: #0404047b; */
   }
   .swiper-pagination {
     position: absolute;

@@ -39,29 +39,27 @@ export const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/production" element={<Production />} />
         <Route path="/vibropress" element={<Production />} />
-
         <Route path="/vibropress/model1" element={<Production />} />
         <Route path="/vibropress/model2" element={<Production2 />} />
         <Route path="/vibropress/model3" element={<Production3 />} />
         <Route path="/vibropress/model4" element={<Production4 />} />
         <Route path="/vibropress/model5" element={<Production5 />} />
-
+        
         <Route path="/beton/model1" element={<Beton1 />} />
         <Route path="/beton/model2" element={<Beton22 />} />
         <Route path="/beton/model3" element={<Beton2 />} />
         <Route path="/beton/model4" element={<Beton3 />} />
         <Route path="/beton/model5" element={<Beton4 />} />
         <Route path="/beton/model6" element={<Beton6 />} />
-
+        
         <Route path="/press-form/model1" element={<PressForm1 />} />
         <Route path="/press-form/model2" element={<PressForm2 />} />
         <Route path="/press-form/model3" element={<PressForm3 />} />
         <Route path="/press-form/model4" element={<PressForm4 />} />
-
+        
         <Route path="/transport/model1" element={<Transport1 />} />
         <Route path="/transport/model2" element={<Transport2 />} />
         <Route path="/transport/model3" element={<Transport3 />} />
-
         <Route path="/help-equip/model1" element={<HelpEquip1 />} />
         <Route path="/help-equip/model2" element={<HelpEquip2 />} />
         <Route path="/help-equip/model3" element={<HelpEquip3 />} />
@@ -71,7 +69,6 @@ export const App = () => {
         <Route path="/help-equip/model7" element={<HelpEquip7 />} />
         <Route path="/help-equip/model8" element={<HelpEquip8 />} />
         <Route path="/help-equip/model9" element={<HelpEquip9 />} />
-
         <Route path="/betonomix" element={<Production />} />
         <Route path="/pressform" element={<Production />} />
         <Route path="/service" element={<Service />} />

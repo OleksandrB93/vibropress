@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DropSlider from 'components/DropSlider/DropSlider';
 import {
   LinkContainer,
@@ -37,6 +37,10 @@ export default function LinkNav({ handleToggle, isOpen }) {
   const handleDropMenu = () => {
     setDropMenu(!dropMenu);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = dropMenu ? 'hidden' : 'auto';
+  }, [dropMenu]);
 
   const handleSliderClick = event => {
     event.stopPropagation();
