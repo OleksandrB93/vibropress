@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DropSlider from 'components/DropSlider/DropSlider';
+import DropSlider, { DropSliderTrans } from 'components/DropSlider/DropSlider';
 import {
   LinkContainer,
   NavContainer,
@@ -63,48 +63,50 @@ export default function LinkNav({ handleToggle, isOpen }) {
         <LinkContainerProd onClick={handleDropMenu}>
           Продукція
           {dropMenu && (
-            <DropList>
-              <li
-                key="vibro"
-                onMouseEnter={() => handleSlider('vibro')}
-                onMouseLeave={() => handleSlider('vibro')}
-                onClick={handleSliderClick}
-              >
-                Вібропреси
-              </li>
-              <li
-                key="beton"
-                onMouseEnter={() => handleSlider('beton')}
-                onMouseLeave={() => handleSlider('beton')}
-                onClick={handleSliderClick}
-              >
-                Бетонозмішувальні комплекси
-              </li>
-              <li
-                key="press"
-                onMouseEnter={() => handleSlider('press')}
-                onMouseLeave={() => handleSlider('press')}
-                onClick={handleSliderClick}
-              >
-                Прес-форми
-              </li>
-              <li
-                key="trans"
-                onMouseEnter={() => handleSlider('trans')}
-                onMouseLeave={() => handleSlider('trans')}
-                onClick={handleSliderClick}
-              >
-                Транспортна група
-              </li>
-              <li
-                key="help"
-                onMouseEnter={() => handleSlider('help')}
-                onMouseLeave={() => handleSlider('help')}
-                onClick={handleSliderClick}
-              >
-                Допоміжне
-              </li>
-            </DropList>
+            <div>
+              <DropList>
+                <li
+                  key="vibro"
+                  onMouseEnter={() => handleSlider('vibro')}
+                  onMouseLeave={() => handleSlider('vibro')}
+                  onClick={handleSliderClick}
+                >
+                  Вібропреси
+                </li>
+                <li
+                  key="beton"
+                  onMouseEnter={() => handleSlider('beton')}
+                  onMouseLeave={() => handleSlider('beton')}
+                  onClick={handleSliderClick}
+                >
+                  Бетонозмішувальні комплекси
+                </li>
+                <li
+                  key="press"
+                  onMouseEnter={() => handleSlider('press')}
+                  onMouseLeave={() => handleSlider('press')}
+                  onClick={handleSliderClick}
+                >
+                  Прес-форми
+                </li>
+                <li
+                  key="trans"
+                  onMouseEnter={() => handleSlider('trans')}
+                  onMouseLeave={() => handleSlider('trans')}
+                  onClick={handleSliderClick}
+                >
+                  Транспортна група
+                </li>
+                <li
+                  key="help"
+                  onMouseEnter={() => handleSlider('help')}
+                  onMouseLeave={() => handleSlider('help')}
+                  onClick={handleSliderClick}
+                >
+                  Допоміжне обладнання
+                </li>
+              </DropList>
+            </div>
           )}
           {dropSliders.vibro && (
             <DropSliderContainer
@@ -144,7 +146,7 @@ export default function LinkNav({ handleToggle, isOpen }) {
               onMouseEnter={() => handleSlider('trans')}
               onMouseLeave={() => handleSlider('trans')}
             >
-              <DropSlider
+              <DropSliderTrans
                 dropSlider={droptransport}
                 handleSlider={() => handleSlider('trans')}
               />

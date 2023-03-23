@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { SlideBox } from './Swiper.styled';
 import { Autoplay, Pagination, EffectCoverflow } from 'swiper';
-
+import { v4 as uuidv4 } from 'uuid';
 const breakpoints = {
   320: {
     slidesPerView: 1,
@@ -79,7 +79,7 @@ export default function Slider() {
         pagination={{ type: 'bullets', clickable: true, dynamicBullets: true }}
       >
         {homeSlider.map((homeSlider, homeSliderIndex) => (
-          <SwiperSlide key={homeSlider.id}>
+          <SwiperSlide key={uuidv4()}>
             <Slide
               homeSlider={homeSlider}
               isActive={activeSlideIndex === homeSliderIndex}

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled/macro';
 
 export const SliderContainer = styled.div`
+position: relative;
   height: 500px;
   width: 100vw;
   background-color: #bbcbcc;

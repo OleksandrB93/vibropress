@@ -36,7 +36,7 @@ export default function FooterInfo() {
             <AddressFooter>
               Україна, м.Миколаїв,
               <br />
-              вул.Київське шосе, 1Б
+              вул.Київське шосе, 1Г
             </AddressFooter>
           </LocitionContainer>
         </ContactLocation>

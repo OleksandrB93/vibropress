@@ -18,20 +18,20 @@ import {
 } from './DropSlider.styled';
 SwiperCore.use([Navigation]);
 
-export default function DropSlider({handleSlider, dropSlider }) {
+export default function DropSlider({ handleSlider, dropSlider }) {
   return (
     <div>
       <Backdrop></Backdrop>
       <SliderContainer>
         <Swiper
-         navigation={true}
-         modules={[Pagination, Navigation]}
+          navigation={true}
+          modules={[Pagination, Navigation]}
           pagination={{
             type: 'bullets',
             clickable: true,
             dynamicBullets: true,
           }}
-
+          loop={true}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -51,9 +51,62 @@ export default function DropSlider({handleSlider, dropSlider }) {
             },
           }}
         >
-          {dropSlider.map(dropSlide => (
+          {dropSlider.map((dropSlide, index) => (
             <SliderSlide key={uuidv4()}>
-              <SwiperSlide>
+              <SwiperSlide key={index}>
+                <Link to={dropSlide.path} onClick={handleSlider}>
+                  <SlideImg
+                    src={process.env.PUBLIC_URL + dropSlide.imgUrl}
+                    alt="name"
+                  />
+                  <p>{dropSlide.text}</p>
+                </Link>
+              </SwiperSlide>
+            </SliderSlide>
+          ))}
+          <div className="swiper-pagination"></div>
+        </Swiper>
+      </SliderContainer>
+    </div>
+  );
+}
+
+export function DropSliderTrans({ handleSlider, dropSlider }) {
+  return (
+    <div>
+      <Backdrop></Backdrop>
+      <SliderContainer>
+        <Swiper
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          pagination={{
+            type: 'bullets',
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          loop={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1440: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+        >
+          {dropSlider.map((dropSlide, index) => (
+            <SliderSlide key={uuidv4()}>
+              <SwiperSlide key={index}>
                 <Link to={dropSlide.path} onClick={handleSlider}>
                   <SlideImg
                     src={process.env.PUBLIC_URL + dropSlide.imgUrl}

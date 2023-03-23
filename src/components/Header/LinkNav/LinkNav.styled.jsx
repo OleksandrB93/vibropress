@@ -16,6 +16,9 @@ export const Box = styled.div`
 
 export const NavContainer = styled.div`
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   text-transform: uppercase;
   font-style: italic;
   @media (max-width: 888.98px) {
@@ -49,27 +52,41 @@ export const DropList = styled.ul`
   margin: 0;
   padding: 0;
   color: black;
-  background-color: #c7c7c7d6;
+  background-color: #5f5f5fd5;
   backdrop-filter: blur(5px);
-  border: 1px solid #000;
-  border-radius: 15px;
+  border: 1px solid #3f3f3f;
+  border-radius: 9px;
   z-index: 999;
   white-space: nowrap;
 
   li {
-    display: inline-block;
-    padding:10px;
-    font-size: 16px;
-    /* pointer-events: none; */
+display: inline-block;
+margin: 0 5px;
+padding: 10px;
+font-size: 16px;
+/* font-style: normal; */
+background-color: #c7c7c7;
+border-radius: 7px;
+transition: all 0.2s ease-in-out;
+border: 2px solid gray;
+
+}
+  li:first-of-type {
+    margin-left: 0;
+  }
+
+  li:last-of-type {
+    margin-right: 0;
   }
 
   li:hover {
-    background-color: black;
+    background: linear-gradient(to bottom right, #4c4c4c, #4c4c4c);
     color: orange;
-    border-radius: 15px;
+    border-radius: 7px;
+    border: 2px solid orange;
+
   }
 `;
-
 
 export const LinkContainer = styled(NavLink)`
   width: 100px;
@@ -82,7 +99,12 @@ export const LinkContainer = styled(NavLink)`
   color: black;
   padding: 7px 10px;
   opacity: 1;
+  margin-right: 10px;
 
+  &:hover {
+    background-color: #383737;
+    border-radius: 10px;
+  }
   &:hover:not(.active),
   &:focus-visible:not(.active) {
     color: #ff8900;
@@ -94,7 +116,7 @@ export const LinkContainer = styled(NavLink)`
 
   &.active {
     color: #ff8900;
-    background-color: #020202;
+    background-color: #4c4c4c;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
   }
@@ -120,7 +142,7 @@ export const LinkContainerProd = styled.div`
     }
   } */
   :hover {
-    background-color: #020202;
+    background-color: #383737;
     box-shadow: rgba(255, 166, 0, 0.841) 0px 5px 15px;
     border-radius: 10px;
   }

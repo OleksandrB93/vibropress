@@ -10,35 +10,35 @@
     "id": 2,
     "name": "slide2",
     "imgUrl": "/imgs/production/press-form/press222.jpg",
-    "text": "Прес-форми для вібропрессування",
+    "text": "Прес-форми для тротуарної плитки",
     "path": "/press-form/model2"
   },
   {
     "id": 3,
     "name": "slide3",
     "imgUrl": "/imgs/production/press-form/press111.jpg",
-    "text": "Прес-форми для вібропрессування",
+    "text": "Прес-форми для тротуарної плитки",
     "path": "/press-form/model2"
   },
   {
     "id": 4,
     "name": "slide2",
     "imgUrl": "/imgs/production/press-form/press333.jpg",
-    "text": "Прес-форми для вібропрессування",
+    "text": "Прес-форми для стінових блоків",
     "path": "/press-form/model3"
   },
   {
     "id": 5,
     "name": "slide3",
     "imgUrl": "/imgs/production/press-form/press444.jpg",
-    "text": "Прес-форми для вібропрессування",
+    "text": "Прес-форми для стінових блоків",
     "path": "/press-form/model3"
   },
   {
     "id": 6,
     "name": "slide4",
     "imgUrl": "/imgs/production/press-form/press4.jpg",
-    "text": "Прес-форми для вібропрессування",
+    "text": "Прес-форми для елементів ландшафтного дизайну",
     "path": "/press-form/model4"
   }
 ]
